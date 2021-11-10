@@ -1,0 +1,40 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+.main-slider-cover, .landing-sec-1, .landing-sec-5, .landing-sec-6, .landing-sec-7, .landing-sec-8, .lets-talk-sec, footer, .innerBanner, .community-form-main{z-index: 9;}
+.community-form-main{position: relative;}
+/* .slider-caps-main .slider-caps-inner .btn span::after{top: 3px;background-size: 6px;}
+.slider-caps-main .slider-caps-inner .btn{line-height: 44px;} */
+.contact-lr-blocks .contact-lr.right .contact-lr-desc p{width: 700px;}
+.ghost-btn.btn{line-height: 59px;}
+.client-expiration-block .client-comment-block .user-comment-time .user-img{line-height: 46px;}
+.last-post-tag{padding: 2px 8px 1px 8px;}
+.login-reg-block{padding:10px 34px 9px;}
+.community-forum .community-forun-table table tr td.td-last-post span.last-pot-img{line-height: 45px;}
+.our-story-sec-3-block .our-story-sec-3-block-img{min-height: 460px;}
+.landing-sec-2 .landing-sec-2-block-text .link{background-position: 100% 0px;}
+.testimonials, .owl-stage-outer, .owl-stage{display: block;}
+.career-landing-sec-5 .career-testimonial .owl-dots .owl-dot{height: 15px;}
+.landing-sec-2 .year-dot .dot svg{height: 40px;}
+.btn span::after{top: 7%;}
+input, select, textarea{line-height: 53px;}
+
+.validation_rulse_table .custom-table-filter select::-ms-expand{display: none;}
+.video-popup-main .video-popup-inner{justify-content: space-around;-ms-flex-pack: distribute;-webkit-justify-content: space-around;}
+.blog-page .container .col-4 .sidebar-tag .blog-tag-cloud .item-list ul li::before { display: none; }
+.modal{z-index: 999999 !important;}
+.modal-backdrop{z-index: 999999 !important;}
+}
+
+@media only screen and (max-width: 2149px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+.slider-caps-main .slider-caps-inner .btn{line-height: 44px;}
+.slider-caps-main .slider-caps-inner .btn span::after{top: 3px;background-size: 6px;}
+.modal{z-index: 999999 !important;}
+.modal-backdrop{z-index: 999999 !important;}
+}
+
+@media only screen and (max-width: 2559px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+.btn{line-height: 51px;}
+.modal{z-index: 999999 !important;}
+}
+
+.main-slider-cover, .landing-sec-1, .landing-sec-5, .landing-sec-6, .landing-sec-8, .lets-talk-sec, footer{_z-index: 9;}
+.modal{_z-index: 999999 !important;}

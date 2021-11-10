@@ -1,0 +1,1075 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: none;
+}
+
+html,
+body {
+    margin: 0px;
+    font-size: 21.25px;
+    line-height: 37.5px;
+    overflow-x: hidden;
+    color: $black;
+    font-family: $default;
+    outline: 0px !important;
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    border: 0;
+    outline: none;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: $orange;
+    @include transition (all 0.3s ease-in-out 0s);
+    outline: 0px !important;
+}
+
+.mac {
+    .btn {
+        padding-top: 0!important;
+    }
+}
+
+%btn {
+    text-decoration: none;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    text-transform: uppercase;
+    height: 56px;
+    line-height: 61px;
+    font-family: $default;
+    text-align: center;
+    padding: 0.1em 30px 0;
+    letter-spacing: 0px;
+    background: $gray-bg;
+    color: $orange;
+    border: 0;
+    font-size: 18.75px;
+    border-radius: 56px;
+    transform: scale(1);
+    transition: transform .8s cubic-bezier(.158, .799, .182, .844);
+    will-change: transform;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+    outline: 0px !important;
+
+    @include breakpoint(xxxl) {
+        height: 47px;
+        padding: 0em 30px 0;
+        font-size: 15px;
+        line-height: 53px;
+    }
+    @include breakpoint(xxl) {
+        padding: 0em 27px 0px;
+        font-size: 15px;
+    }
+    @include breakpoint(xl) {
+        // height: 34px;
+        padding: 0em 24px 0;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        // line-height: 40px;
+    }
+    @include breakpoint(lg) {
+        height: 54px;
+        padding: 0em 31px 0;
+        font-size: 17px;
+        letter-spacing: 0.5px;
+        line-height: 60px;
+    }
+    @include breakpoint(sm) {
+        height: 44px;
+        padding: 0em 23px 0;
+        font-size: 14px;
+        line-height: 50px;
+    }
+    span {
+        transform: scale(1);
+        transition: transform .8s cubic-bezier(.158, .799, .182, .844);
+        will-change: transform;
+        display: inline-block;
+        height: 100%;
+        &:after {
+            content: "";
+            background-image: url(../images/btn-arrow-orange.svg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 18px;
+            width: 9px;
+            display: inline-block;
+            margin-left: 1em;
+            position: relative;
+            // top: 0.25em;
+            top: 8%;
+        }
+    }
+    &:hover {
+        transform: scale(1.06) !important;
+        background: $orange;
+        color: $white;
+        span {
+            transform: scale(1);
+            &:after {
+                background-image: url(../images/btn-arrow-white.svg);
+            }
+        }
+    }
+    &.btn-transparent {
+        background-color: rgba(255, 255, 255, 0.20);
+        color: $white;
+        span {
+            &:after {
+                background-image: url(../images/btn-arrow-white.svg);
+            }
+        }
+    }
+    &.btn-white {
+        background-color: $white;
+        color: $orange;
+        span {
+            &:after {
+                background-image: url(../images/btn-arrow-orange.svg);
+            }
+        }
+        &:hover {
+            background: $orange;
+            color: $white;
+            span {
+                &:after {
+                    background-image: url(../images/btn-arrow-white.svg);
+                }
+            }
+        }
+    }
+    &.purple-btn{
+        color: $purple;
+        span{
+            &:after {
+                background-image: url(../images/btn-arrow-purple.svg);
+            }
+        }
+        &:hover{
+            background-color: $white;
+        }
+    }
+    &.orange-btn{
+        background: $orange;
+        color: $white;
+        span{
+            &:after {
+                background-image: url(../images/btn-arrow-white.svg);
+            }
+        }
+        &:hover{
+            background-color: $white;
+        }
+    }
+    &.orchid{
+        background: $dark-orchid;
+    }
+    &.orchid-color{
+        color: $dark-orchid !important;
+        span{
+            &:after {
+                background-image: url(../images/btn-arrow-orchid.svg);
+            }
+        }
+        &:hover{
+            color: $white !important;
+        }
+    }
+    &.ghost-btn{
+        border: 1px solid $dark-orchid;
+        color: $dark-orchid !important;
+        background-color: transparent;
+        font-size: 20px;
+        height: 54px;
+        line-height: 57px;
+        padding: 0em 29px 0 !important;
+        span{
+            &:after{
+                top: 0;
+            }
+        }
+        &:hover{
+            transform: scale(1);
+            background-color: $dark-orchid;
+            color: $white !important;
+            span{
+                transform: scale(1);
+                &:after{
+                    background-image: url('../images/btn-angle-right-w.png') !important;
+                }
+            }
+        }
+    }
+}
+
+.btn {
+    @extend %btn;
+}
+
+.mac .btn{
+    line-height: 57px;
+    @include breakpoint(xxxl) {
+        line-height: 48px;
+    }
+    // @include breakpoint(xxl) {
+    //     line-height: 44px;
+    // }
+    // @include breakpoint(xl) {
+    //     line-height: 34px;
+    // }
+    @include breakpoint(lg) {
+        line-height: 54px;
+    }
+    @include breakpoint(sm) {
+        line-height: 44px;
+    }
+    &.ghost-btn{
+        line-height: 53px;
+    }
+}
+
+
+.green-btn{
+    color: $white !important;
+    background: $aqua;
+    span{
+        &:after{
+            display: none;
+        }
+        &:before{
+            content: "";
+            background-image: url(../images/btn-arrow-white.svg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 18px;
+            width: 9px;
+            display: inline-block;
+            margin-left: 0;
+            position: relative;
+            top: 8%;
+            transform: rotate(180deg);
+            margin: 0 1em 0 0;
+        }
+    }
+}
+.green-btn-right-arrow{
+    color: $white !important;
+    background: $aqua;
+    span{
+        &:after{
+            content: "";
+            background-image: url(../images/btn-arrow-white.svg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 18px;
+            width: 9px;
+            display: inline-block;
+            margin-left: 0;
+            position: relative;
+            top: 8%;
+            margin: 0 0 0 1em;
+        }
+         
+    }
+}
+
+.container {
+    width: 2374px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    @include breakpoint(xxxl) {
+        width: 2006px;
+    }
+    @include breakpoint(xxl) {
+        width: 1680px;
+    }
+    @media only screen and (max-width: 1840px) {
+        width: 1480px;    
+    }
+    @include breakpoint(xl) {
+        width: 1440px;
+    }
+    @media only screen and (max-width: 1440px) {
+        width: 1184px;    
+    }
+    
+    @include breakpoint(lg) {
+        width: 1024px;
+    }
+    @include breakpoint(md) {
+        width: 768px;
+    }
+    @include breakpoint(sm) {
+        width: 640px;
+    }
+    @include breakpoint(xs) {
+        width: 480px;
+    }
+    @include breakpoint(vs) {
+        width: 400px;
+        padding: 0 15px;
+    }
+    &.container-1522 {
+        width: 1522px;
+        @include breakpoint(xl) {
+            width: 1140px;
+        }
+        @include breakpoint(lgm) {
+            width: 1100px;
+        }
+        @include breakpoint(lg) {
+            width: 660px;
+        }
+        @include breakpoint(md) {
+            width: 591px;
+        }
+    }
+    &.container-1320 {
+        width: 1350px;
+        @include breakpoint(xl) {
+            width: 1140px;
+        }
+        @include breakpoint(lg) {
+            width: 660px;
+        }
+        @include breakpoint(md) {
+            width: 591px;
+        }
+    }
+    &.container-1554 {
+        width: 1594px;
+        @include breakpoint(xxxl) {
+            width: 1357px;
+        }
+        @include breakpoint(xxl) {
+            width: 1338px;
+        }
+        @include breakpoint(xl) {
+            width: 1080px;
+        }
+        @include breakpoint(lg) {
+            width: 660px;
+        }
+        @include breakpoint(md) {
+            width: 591px;
+        }
+        @include breakpoint(sm) {
+            width: 350px;
+        }
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+    }
+    &.container-1415 {
+        width: 1455px;
+        @include breakpoint(xxxl) {
+            width: 1237px;
+        }
+        @include breakpoint(xxl) {
+            width: 1037px;
+        }
+        @include breakpoint(xl) {
+            width: 841px;
+        }
+        @include breakpoint(lg) {
+            width: 696px;
+        }
+        @include breakpoint(md) {
+            width: 550px;
+        }
+        @include breakpoint(sm) {
+            width: 354px;
+        }
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+    }
+    &.container-1847 {
+        width: 1890px;
+        @include breakpoint(xxxl) {
+            width: 1592px;
+        }
+        @include breakpoint(xxl) {
+            width: 1509px;
+        }
+        @include breakpoint(xl) {
+            width: 1220px;
+        }
+        @include breakpoint(lg) {
+            width: 670px;
+        }
+        @include breakpoint(md) {
+            width: 597px;
+        }
+        @include breakpoint(sm) {
+            width: 360px;
+        }
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+    }
+    &.container-2187 {
+        width: 2227px;
+        @include breakpoint(xxxl) {
+            width: 1880px;
+        }
+        @include breakpoint(xxl) {
+            width: 1580px;
+        }
+        @include breakpoint(xl) {
+            width: 1270px;
+        }
+        @include breakpoint(lgm) {
+            width: 1080px;
+        }
+        @include breakpoint(lg) {
+            width: 670px;
+        }
+        @include breakpoint(md) {
+            width: 596px;
+        }
+        @include breakpoint(sm) {
+            width: 356px
+        }
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+    }
+    /*&.container-2334{
+        @media only screen and (min-width: 2374px) {
+            width: 2374px;    
+        }
+    }*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    margin: 0 0 15px 0;
+    line-height: normal;
+}
+
+h1 {
+    font-size: 65px;
+    @include breakpoint(xl) {
+        font-size: 60px;
+    }
+    @include breakpoint(lg) {
+        font-size: 55px;
+    }
+    @include breakpoint(md) {
+        font-size: 50px;
+    }
+    @include breakpoint(sm) {
+        font-size: 45px;
+    }
+    @include breakpoint(xs) {
+        font-size: 40px;
+    }
+    @include breakpoint(vs) {
+        font-size: 35px;
+    }
+}
+
+h2 {
+    font-size: 55px;
+    @include breakpoint(xl) {
+        font-size: 50px;
+    }
+    @include breakpoint(lg) {
+        font-size: 45px;
+    }
+    @include breakpoint(md) {
+        font-size: 40px;
+    }
+    @include breakpoint(sm) {
+        font-size: 35px;
+    }
+    @include breakpoint(xs) {
+        font-size: 30px;
+    }
+    @include breakpoint(vs) {
+        font-size: 25px;
+    }
+}
+
+h3 {
+    font-size: 45px;
+    @include breakpoint(xl) {
+        font-size: 40px;
+    }
+    @include breakpoint(lg) {
+        font-size: 35px;
+    }
+    @include breakpoint(md) {
+        font-size: 30px;
+    }
+    @include breakpoint(sm) {
+        font-size: 25px;
+    }
+    @include breakpoint(xs) {
+        font-size: 20px;
+    }
+}
+
+h4 {
+    font-size: 35px;
+    @include breakpoint(xl) {
+        font-size: 30px;
+    }
+    @include breakpoint(lg) {
+        font-size: 25px;
+    }
+    @include breakpoint(md) {
+        font-size: 20px;
+    }
+    @include breakpoint(sm) {
+        font-size: 18px;
+    }
+}
+
+h5 {
+    font-size: 25px;
+    @include breakpoint(xl) {
+        font-size: 22px;
+    }
+    @include breakpoint(lg) {
+        font-size: 22px;
+    }
+    @include breakpoint(md) {
+        font-size: 18px;
+    }
+    @include breakpoint(sm) {
+        font-size: 16px;
+    }
+}
+
+h6 {
+    font-size: 22px;
+    @include breakpoint(xl) {
+        font-size: 20px;
+    }
+    @include breakpoint(lg) {
+        font-size: 18px;
+    }
+    @include breakpoint(md) {
+        font-size: 16px;
+    }
+    @include breakpoint(sm) {
+        font-size: 14px;
+    }
+}
+
+p {
+    margin: 0 0 20px;
+}
+
+sup {
+    font-size: 0.6em;
+}
+
+strong,
+b {
+    font-family: $default;
+}
+
+
+.overlay-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+
+.alignleft {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.alignright {
+    float: right;
+    margin: 0 0 20px 20px;
+}
+
+.alignnone {
+    float: none;
+    margin: 0 0 15px 0px;
+    display: block;
+}
+
+.aligncenter {
+    float: none;
+    margin: 0 auto 15px auto;
+    display: list-item;
+}
+
+.main-body {
+    overflow: hidden;
+    position: relative;
+    clear: both;
+    top: 0;
+}
+
+sup {
+    font-size: 0.6em;
+}
+
+table {
+    empty-cells: show;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 15px;
+    border: 1px solid $black;
+    td {
+        padding: 0.5em 1em;
+        border-width: 0 0 0 1px;
+        font-size: inherit;
+        margin: 0;
+        overflow: visible;
+        border-left: 1px solid $black;
+        border-bottom: 1px solid $black;
+        &:first-child {
+            border-left-width: 0;
+        }
+    }
+    th {
+        padding: 0.5em 1em;
+        border-width: 0 0 0 1px;
+        font-size: inherit;
+        margin: 0;
+        overflow: visible;
+        border-left: 1px solid $black;
+        border-bottom: 1px solid $black;
+        &:first-child {
+            border-left-width: 0;
+        }
+    }
+}
+
+thead {
+    text-align: left;
+    vertical-align: bottom;
+    background-color: $black;
+    color: $black;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px 0 15px 30px;
+    li {
+        margin: 0px;
+        padding: 0 0 10px;
+        list-style-type: disc;
+        list-style-position: outside;
+    }
+}
+
+ol {
+    margin: 0px;
+    padding: 0px 0 9px 32px;
+    li {
+        margin: 0px;
+        padding: 0 0 10px;
+        list-style-position: outside;
+        list-style: decimal;
+    }
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0px !important;
+    &:focus {
+        outline: none;
+        outline: 0px !important;
+    }
+}
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], textarea{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    height: 98px;
+    padding: 0 45px;
+    font-size: 20px;
+    font-family: $default;
+    outline: 0px !important;
+}
+textarea{
+    height: 296px;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    padding: 45px !important;
+    font-family: $default !important;
+    font-size: 20px !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    &:focus {
+        outline: none;
+    }
+}
+ 
+input[type="submit"], input[type="button"]{
+    width: auto;
+    background: $black;
+    font-family: $default !important;
+    font-size: 20px !important;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    cursor: pointer;
+    padding:30px 100px 30px 100px;
+    transition: all .4s;
+    outline: 0px !important;
+    &.submit-arrow{
+        background-image: url(../images/btn-arrow-white.svg);
+        background-position: 67% 50%;
+        background-repeat: no-repeat;
+    }
+    &.purple-btn{
+        background-color: $purple;
+        &:hover{
+            background-color: $black;
+        }
+    }
+} 
+
+
+
+.no-js {
+    #loader {
+        display: none;
+    }
+}
+
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    vertical-align: top;
+    width: 100%;
+    position: relative;
+}
+
+.col-12{
+    width: 100%;
+}
+.col-8{
+    width: 66.666667%;
+}
+.col-7{
+    width: 58.333333%;
+}
+.col-4{
+    width: 33.333333%;
+}
+.col-1{
+    width: 8.333333%;
+}
+.col-5{
+    width: 41.666667%;
+}
+.block{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.innerpage-middle-content{
+    width: 100%;
+    position: relative;
+    font-family: $default;
+    padding:80px 0px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.8em;
+    letter-spacing: 0.25px;
+    @include breakpoint(xl) {
+        padding-left: 80px !important;
+        letter-spacing: 0.04em;
+    }
+    @include breakpoint(sm) {
+        padding:50px 0px !important;
+        font-size: 16px;
+    }
+    @include breakpoint(xs) {
+        padding:50px 0px !important;
+        font-size: 14px;
+    }
+    b{
+        font-weight: 700;
+    }
+    h1{
+        margin-top: 30px;
+        font-size: 40px;
+        font-weight: 100;
+        margin-bottom: 25px;
+        @include breakpoint(xl) {
+            font-size: 32px;
+        }
+        @include breakpoint(lg) {
+            font-size: 36px;
+        }
+        @include breakpoint(sm) {
+            font-size: 32px;
+        }
+        @include breakpoint(xs) {
+            font-size: 30px;
+        }
+        @include breakpoint(vs) {
+            font-size: 28px;
+        }
+    } 
+    h2{ 
+        font-size: 32px;
+        font-weight: 100; 
+    }
+    h3{
+        margin-top: 30px;
+        font-size: 28px;
+        font-weight: 100;
+        margin-bottom: 25px;
+    }
+    a{
+        color: $aqua;
+        &:hover{
+            color:$black
+        }
+    }
+    ul{
+        margin: 0px;
+        padding: 0px;
+        padding-left:50px;
+        margin-bottom: 20px;
+        list-style: none;
+        li{ 
+            list-style: none;
+            padding: 0px;
+            position:relative;
+            &:before{
+                position:absolute;
+                content: '';
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                left: -15px;
+                top: 11px;
+                background-color: $gray_color;
+            }
+            ul{
+                li{
+                    &:before{ 
+                        position:absolute;
+                        content: '';
+                        width: 6px;
+                        height: 1px; 
+                        left: -15px;
+                        top: 15px;
+                        background-color: $gray_color;
+                    }
+                }
+            }
+        }
+    }
+    ol{
+        padding-left:50px;
+        @include breakpoint(xl) {
+            
+        }
+    }
+    figure{
+        margin: 0px;
+        width: 100%;
+        margin:25px 0px;
+    }
+    .innerpage-middle-content-table{
+        width: 100%;
+        @include breakpoint(lg) {
+            overflow-x: auto;
+        }
+    }
+    table{
+        border:0px;
+        margin-top:80px;
+        th{
+            font-size: 16px;
+            font-weight: 300;
+            background-color:$dark;
+            color: $white;
+            padding:20px 15px;
+            border:0px;
+            text-align: center;
+            &:last-child{
+                text-align: left;
+            }
+        }
+        tr{
+            &:nth-child(even){
+                background-color:$lighting_gray;
+            }
+            &:hover{
+                background-color: $cultured_pearl;
+            }
+            td{
+                font-size: 15px;
+                font-weight: 300;
+                border:0px;
+                padding:20px 15px;
+                text-align: center;
+                line-height: 1.7em;
+                &:last-child{
+                    text-align: left;
+                }
+            }
+        }
+        @include breakpoint(lg)
+        {
+            width: 991px;
+        }
+        &.left-align-table{
+            tr{
+                &:first-child{
+                    background-color: $white;
+                }
+                &:hover{
+                    background-color: $white;
+                }
+                background-color: $white;
+                td{
+                    text-align: left;
+                    padding: 5px;
+                    background-color: $white;
+                    .btn{
+                        &.orange{
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    b,strong{
+        font-weight: 500;
+        font-family: $robotofont;
+    }
+    .col-7{
+        @include breakpoint(md) {
+            order:2;
+            width: 100%;
+            padding-top: 50px;
+        }
+    }
+    .col-4{
+        @include breakpoint(md) {
+            order:1;
+            width: 100%;
+        }
+    }
+    .container {
+        &.container-1522 {
+            @include breakpoint(lg) {
+                width: 90%;
+            }
+        }
+    }
+}
+.innerpage-title{
+    font-family: $robotofont;
+    h1{
+        font-size: 40px;
+        font-weight: 100;
+        margin-bottom: 25px;
+        margin-top: 0px;
+        @include breakpoint(lg) {
+            font-size: 36px;
+        }
+        @include breakpoint(lg) {
+            font-size: 36px;
+        }
+        @include breakpoint(sm) {
+            font-size: 32px;
+        }
+        @include breakpoint(xs) {
+            font-size: 30px;
+        }
+        @include breakpoint(vs) {
+            font-size: 28px;
+        }
+    }
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items:center;
+}
+.flex-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button{
+    outline: 0px !important;
+}
+
+.pb-none{
+    padding-bottom:0px;
+}
+.pt-none{
+    padding-top:0px;
+}
+.p-none{
+    padding:0px;
+}
+
+.visually-hidden {
+    position: absolute!important;
+    overflow: hidden;
+    clip: rect(1px,1px,1px,1px);
+    width: 1px;
+    height: 1px;
+    word-wrap: normal;
+}
+
+.roboto-font{
+    font-family: $robotofont;
+    .btn{
+        font-family: $default;
+    }
+}
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    body.is-menu-opened .header{z-index: 99999999 !important;}
+    .full-overlay-menu{z-index: 9 !important;}
+    body.is-menu-opened .full-overlay-menu{z-index: 9999999 !important;}
+    .innerpage-middle-content{z-index: 999999;}
+    .map-sec{z-index: 9;}
+}

@@ -1,0 +1,2639 @@
+.label {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 17px;
+    padding: 0 0 0 74px;
+    letter-spacing: 0.5px;
+    margin: 0 0 42px;
+    @include breakpoint(xxxl) {
+        // font-size: 17px;
+        padding-left: 52px;
+        // margin: 0 0 44px;
+    }
+    @include breakpoint(xxl) {
+        // font-size: 16px;
+        padding-left: 51px;
+        // margin: 0 0 35px;
+    }
+    @include breakpoint(xl) {
+        // font-size: 13px;
+        padding-left: 41px;
+        letter-spacing: 0.3px;
+        // margin-bottom: 34px;
+    }
+    @include breakpoint(lg) {
+        // font-size: 19px;
+        padding-left: 56px;
+        letter-spacing: 0.9px;
+        // margin-bottom: 52px;
+    }
+    @include breakpoint(md) {
+        // font-size: 13px;
+        padding-left: 23px;
+        // margin-bottom: 11px;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 40px;
+        background: $orange;
+        top: -6px;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        @include breakpoint(xxl) {
+            width: 41px;
+            // top: -2px;
+        }
+        @include breakpoint(xl) {
+            width: 32px;
+            // top: -3px;
+        }
+        @include breakpoint(sm) {
+            width: 17px;
+        }
+    }
+    span {
+        text-transform: none;
+    }
+}
+
+.mac{
+    .label{
+        &:before {
+            top: -1px;
+        }
+    }
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.landing-sec-1 {
+    padding: 392px 0;
+    position:relative;
+    z-index:3;
+    @include breakpoint(xxxl) {
+        padding: 330px 0 247px;
+    }
+    @include breakpoint(xxl) {
+        padding: 253px 0 250px;
+    }
+    @include breakpoint(xl) {
+        padding: 201px 0;
+    }
+    @include breakpoint(lg) {
+        padding: 196px 0 201px 0;
+    }
+    @include breakpoint(md) {
+        padding: 196px 0 199px 0;
+    }
+    @include breakpoint(sm) {
+        padding: 100px 0 99px 0;
+    }
+    @include breakpoint(xs) {}
+    @include breakpoint(vs) {}
+    .landing-sec-tit-caps {
+        padding: 0 0 0 15px;
+        @include breakpoint(xxl) {
+            padding: 0;
+        }
+        .label{
+            @include breakpoint(md) {
+                padding-left:40px;
+            }
+        }
+    }
+    h3 {
+        font-size: 75px;
+        font-family: $default-regular;
+        color: $silver;
+        line-height: 1.1em;
+        @include breakpoint(xxxl) {
+            font-size: 63px;
+        }
+        @include breakpoint(xxl) {
+            font-size: 59px;
+            line-height: 1.11em;
+            letter-spacing: 0.5px;
+            margin: 0 0 0 -4px;
+        }
+        @include breakpoint(xl) {
+            font-size: 47px;
+        }
+        @include breakpoint(lg) {
+            font-size: 72px;
+        }
+        @include breakpoint(md) {
+            font-size: 54px;
+            line-height: 1.3em;
+        }
+        @include breakpoint(sm) {
+            font-size: 33px;
+            line-height: 1.2em;
+        }
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+        br{
+            @include breakpoint(lg) {
+                display: none;
+            }
+        }
+    }
+    .landing-sec-caps {
+        padding: 53px 10px 0 66px;
+        @include breakpoint(xxxl) {
+            padding: 44px 10px 0 55px;
+        }
+        @include breakpoint(xxl) {
+            padding: 55px 10px 0px 99px;
+        }
+        @include breakpoint(xl) {
+            padding: 44px 0px 0px 79px;
+        }
+        @include breakpoint(lg) {
+            padding: 64px 0px 0px 0;
+        }
+        @include breakpoint(md) {
+            padding: 34px 0px 0px 0;
+        }
+        @include breakpoint(sm) {
+            padding: 24px 0px 0px 0;
+        }
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+        p {
+            letter-spacing: 0.2px;
+            font-size: 17px;
+            @include breakpoint(xxxl) {
+                // font-size: 18px;
+                line-height: 1.8em;
+            }
+            @include breakpoint(xxl) {
+                font-size: 17px;
+            }
+            @include breakpoint(xl) {
+                // font-size: 14px;
+                // line-height: 1.75em;
+                // letter-spacing: 0;
+            }
+            @include breakpoint(lg) {
+                // font-size: 20px;
+            }
+            @include breakpoint(md) {
+                // font-size: 14px;
+                // line-height: 2em;
+            }
+            @include breakpoint(sm) {}
+            @include breakpoint(xs) {}
+            @include breakpoint(vs) {}
+        }
+    }
+    .btn {
+        margin-top: 52px;
+        font-size: 17px;
+        @include breakpoint(xxxl) {
+            margin-top: 36px;
+        }
+        @include breakpoint(xxl) {}
+        @include breakpoint(xl) {
+            margin-top: 25px;
+        }
+        @include breakpoint(lg) {
+            margin-top: 41px;
+        }
+        @include breakpoint(md) {
+            margin-top: 27px;
+        }
+        @include breakpoint(sm) {
+            margin-top: 7px;
+        }
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+    }
+    .row {
+        @include breakpoint(lg) {
+            flex-direction: column;
+        }
+        @include breakpoint(md) {}
+        @include breakpoint(sm) {}
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+        .col-2 {
+            @include breakpoint(lg) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.landing-sec-2 {
+    overflow: hidden;
+    position: relative;  
+    z-index: 99;
+    @include breakpoint(lg) {
+        width: 95%;
+        background: $gray-dark-bg;
+    }
+    @include breakpoint(md) {
+        width: 100%;
+    }
+    @include breakpoint(sm) {
+        width: 100%;
+    }
+    @include breakpoint(xs) {}
+    @include breakpoint(vs) {}
+    .landing-sec-2-inner {
+        background: $gray-dark-bg;
+        position: relative;
+        padding: 143px 0 60px 24px;
+        @include breakpoint(xxxl) {
+            padding: 124px 0 52px 24px;
+        }
+        @include breakpoint(xxl) {
+            padding: 144px 0 96px 0;
+            width: 92%;
+        }
+        @include breakpoint(xl) {
+            padding: 115px 0 65px 0;
+        }
+        @include breakpoint(lg) {
+            width: 100%;
+            margin-left: 0px;
+            padding: 187px 0 125px 0;
+        }
+        @include breakpoint(md) {
+            margin-left: 0;
+        }
+        @include breakpoint(sm) {
+            padding: 94px 0 61px 0;
+            margin-left: 0;
+        }
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 100%;
+            width: 1000%;
+            background: $gray-dark-bg;
+        }
+    }
+    .landing-sec-2-tit-caps {
+        color: $white;
+        width: 1080px;
+        max-width: 100%;
+        margin: 0 0 113px;
+        @include breakpoint(xxxl) {
+            width: 910px;
+            margin-bottom: 88px;
+        }
+        @include breakpoint(xxl) {
+            width: 865px;
+        }
+        @include breakpoint(xl) {
+            width: 695px;
+            margin-bottom: 73px;
+        }
+        @include breakpoint(lg) {}
+        @include breakpoint(md) {
+            margin-bottom: 65px;
+        }
+        @include breakpoint(sm) {
+            margin-bottom: 49px;
+        }
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+    }
+    h3 {
+        font-size: 40px;
+        line-height: 57px;
+        color: $dusty-gray;
+        letter-spacing: 0.8px;
+        margin: 0;
+        @include breakpoint(xxxl) {
+            font-size: 33px;
+            line-height: 1.5em;
+            letter-spacing: 1px;
+        }
+        @include breakpoint(xxl) {
+            font-size: 32px;
+            line-height: 1.45em;
+            letter-spacing: 0.7px;
+        }
+        @include breakpoint(xl) {
+            font-size: 25px;
+            line-height: 1.5em;
+            letter-spacing: 0.8px;
+        }
+        @include breakpoint(lg) {
+            font-size: 31px;
+            line-height: 1.5em;
+            letter-spacing: 1px;
+        }
+        @include breakpoint(md) {
+            font-size: 27px;
+            line-height: 1.76em;
+            letter-spacing: 1px;
+        }
+        @include breakpoint(sm) {
+            font-size: 18px;
+            line-height: 1.76em;
+            letter-spacing: 0.8px;
+        }
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+        br {
+            @include breakpoint(lg) {
+                display: none;
+            }
+        }
+        span {
+            color: $white;
+        }
+    }
+    .landing-sec-2-icon-caps-blocks-list {
+        padding: 0 0 0 50px;
+        @include breakpoint(xxl) {
+            padding: 0 0 0 42px;
+        }
+        @include breakpoint(xl) {
+            padding: 0 0 0 32px;
+        }
+        @include breakpoint(lg) {
+            padding: 0;
+        }
+        @include breakpoint(md) {}
+        @include breakpoint(sm) {}
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+        .row {
+            @include breakpoint(lg) {
+                flex-direction: column;
+                align-items: center;
+            }
+            .col-2 {
+                @include breakpoint(lg) {
+                    width: 100%;
+                    max-width: 400px;
+                }
+                @include breakpoint(md) {
+                    max-width: 420px;
+                    margin-left: 11px;
+                }
+                @include breakpoint(sm) {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    .landing-sec-2-icon-caps-block {
+        position: relative;
+        width: 520px;
+        max-width: 100%;
+        margin-bottom: 83px;
+        @include breakpoint(xxxl) {
+            width: 427px;
+            margin-bottom: 67px;
+        }
+        @include breakpoint(xxl) {
+            width: 407px;
+            margin-bottom: 37px;
+        }
+        @include breakpoint(xl) {
+            width: 333px;
+            margin-bottom: 41px;
+        }
+        @include breakpoint(lg) {
+            width: 100%;
+            margin-bottom: 65px;
+        }
+        @include breakpoint(md) {}
+        @include breakpoint(sm) {
+            margin-bottom: 24px;
+        }
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+    }
+    .landing-sec-2-block-icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        @include breakpoint(xxxl) {
+            width: 70px;
+        }
+        @include breakpoint(xxl) {
+            width: 66px;
+        }
+        @include breakpoint(xl) {
+            width: 54px;
+        }
+        @include breakpoint(lg) {
+            width: 71px;
+            margin-left: -15px;
+        }
+        @include breakpoint(md) {
+            width: 66px;
+            margin-left: 2px;
+            margin-top: 5px;
+        }
+        @include breakpoint(sm) {
+            width: 60px;
+            margin-left: -2px;
+            margin-top: 8px;
+        }
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+    }
+    .landing-sec-2-block-text {
+        color: $white;
+        padding: 0 0 0 140px;
+        @include breakpoint(xxxl) {
+            padding: 0 0 0 110px;
+        }
+        @include breakpoint(xxl) {}
+        @include breakpoint(xl) {
+            padding: 0 0 0 89px;
+        }
+        @include breakpoint(lg) {
+            padding: 0 0 0 96px;
+        }
+        @include breakpoint(md) {
+            padding: 0 0 0 114px;
+        }
+        @include breakpoint(sm) {
+            padding: 0 0 0 95px;
+        }
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+        h4 {
+            font-size: 25px;
+            text-transform: uppercase;
+            color: $dusty-gray;
+            letter-spacing: 2px;
+            @include breakpoint(xxxl) {
+                font-size: 21px;
+                margin: 0 0 13px;
+                letter-spacing: 2px;
+            }
+            @include breakpoint(xxl) {
+                letter-spacing: 1.5px;
+                margin: 0 0 8px;
+            }
+            @include breakpoint(xl) {
+                font-size: 16px;
+            }
+            @include breakpoint(lg) {
+                font-size: 21px;
+            }
+            @include breakpoint(md) {}
+            @include breakpoint(sm) {}
+            @include breakpoint(xs) {}
+            @include breakpoint(vs) {}
+        }
+        p {
+            font-size: 17px;
+            line-height: 1.6em;
+            margin: 0 0 15px;
+            @include breakpoint(xxxl) {
+                font-size: 17px;
+                margin: 0 0 8px;
+            }
+            @include breakpoint(xxl) {
+                letter-spacing: -0.3px;
+                // line-height: 1.55em;
+            }
+            @include breakpoint(xl) {
+                // font-size: 13px;
+                letter-spacing: 0;
+                // margin: 0 0 3px;
+            }
+            @include breakpoint(lg) {
+                // font-size: 16px;
+                letter-spacing: 0.1px;
+                // margin-bottom: 8px;
+            }
+            @include breakpoint(md) {
+                // line-height: 1.6em;
+            }
+            @include breakpoint(sm) {
+                // line-height: 1.7em;
+                // margin-bottom: 0;
+            }
+            @include breakpoint(xs) {}
+            @include breakpoint(vs) {}
+        }
+        .link {
+            font-size: 17px;
+            text-transform: uppercase;
+            color: $aqua;
+            background: url(../images/btn-arrow-green.svg) no-repeat right 3px; 
+            padding-right: 23px;
+            letter-spacing: 1.3px;
+            padding-top: 1px;
+            vertical-align: middle;
+            @include breakpoint(xxxl) {
+                font-size: 14px;
+                letter-spacing: 1.3px;
+            }
+            @include breakpoint(xxl) {
+                letter-spacing: 0.8px;
+            }
+            @include breakpoint(xl) {
+                font-size: 11px;
+                padding-right: 12px;
+            }
+            @include breakpoint(lg) {
+                font-size: 14px;
+            }
+            @include breakpoint(md) {}
+            @include breakpoint(sm) {}
+            @include breakpoint(xs) {}
+            @include breakpoint(vs) {}
+            &:hover {
+                padding-right: 30px;
+                color: #1fdbe6;
+            }
+        }
+    }
+}
+
+.landing-sec-3 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    background: $aqua;
+    padding: 883px 0 339px 0;
+    margin-top: -547px;
+    position: relative;
+    z-index: 9;
+    @include breakpoint(xxxl) {
+        padding: 834px 0 287px 0;
+    }
+    @include breakpoint(xxl) {
+        margin-top: -440px;
+    }
+    @include breakpoint(xl) {
+        margin-top: -353px;
+        padding: 552px 0 205px 0;
+    }
+    @include breakpoint(lg) {
+        margin-top: 0;
+        padding: 202px 0 205px 0;
+    }
+    @include breakpoint(md) {
+        padding: 202px 0 200px 0;
+    }
+    @include breakpoint(sm) {
+        padding: 102px 0 98px 0;
+    }
+    @include breakpoint(xs) {}
+    @include breakpoint(vs) {}
+    &:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: $white;
+        width: 80px;
+        @include breakpoint(lg) {
+            /*width: 70px;*/
+        }
+        @include breakpoint(sm) {
+            display: none;
+        }
+    }
+    .polygon-shape{
+        height: 960px;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        .polygon-a {
+            position: absolute;
+            &.polygon-a-1 {
+                right: 15%;
+                top: 12%;
+                width: 6.5%;
+                @include breakpoint(xxxl) {}
+                @include breakpoint(xxl) {}
+                @include breakpoint(xl) {}
+                @include breakpoint(lg) {
+                    display: none;
+                }
+                @include breakpoint(md) {}
+                @include breakpoint(sm) {}
+                @include breakpoint(xs) {}
+                @include breakpoint(vs) {}
+            }
+            &.polygon-a-2 {
+                right: 4.7%;
+                top: 20%;
+                width: 13.1%;
+                @include breakpoint(xxxl) {}
+                @include breakpoint(xxl) {}
+                @include breakpoint(xl) {}
+                @include breakpoint(lg) {}
+                @include breakpoint(md) {}
+                @include breakpoint(sm) {
+                    right: 1.5%;
+                    top: 31.5%;
+                    width: 41.1%;
+                }
+                @include breakpoint(xs) {}
+                @include breakpoint(vs) {}
+            }
+            &.polygon-a-3 {
+                right: -1%;
+                top: 37%;
+                width: 8.45%;
+                @include breakpoint(xxxl) {}
+                @include breakpoint(xxl) {}
+                @include breakpoint(xl) {}
+                @include breakpoint(lg) {}
+                @include breakpoint(md) {}
+                @include breakpoint(sm) {
+                    right: 31%;
+                    top: 7%;
+                    width: 18.45%;
+                }
+                @include breakpoint(xs) {}
+                @include breakpoint(vs) {}
+            }
+            &.polygon-a-4 {
+                right: 7.3%;
+                top: 60%;
+                width: 2.7%;
+                @include breakpoint(xxxl) {}
+                @include breakpoint(xxl) {}
+                @include breakpoint(xl) {}
+                @include breakpoint(lg) {}
+                @include breakpoint(md) {}
+                @include breakpoint(sm) {}
+                @include breakpoint(xs) {}
+                @include breakpoint(vs) {}
+            }
+            &.polygon-a-5 {
+                right: 14.3%;
+                top: 95%;
+                width: 1.5%;
+                @include breakpoint(xxxl) {}
+                @include breakpoint(xxl) {}
+                @include breakpoint(xl) {}
+                @include breakpoint(lg) {}
+                @include breakpoint(md) {}
+                @include breakpoint(sm) {}
+                @include breakpoint(xs) {}
+                @include breakpoint(vs) {}
+            }
+            &.polygon-a-6 {
+                right: 15%;
+                top: 88.5%;
+                width: 6.5%;
+                @include breakpoint(xxxl) {}
+                @include breakpoint(xxl) {}
+                @include breakpoint(xl) {}
+                @include breakpoint(lg) {}
+                @include breakpoint(md) {}
+                @include breakpoint(sm) {}
+                @include breakpoint(xs) {}
+                @include breakpoint(vs) {}
+            }
+            &.polygon-a-7 {
+                right: 7%;
+                top: 100%;
+                width: 4.4%;
+                @include breakpoint(xxxl) {}
+                @include breakpoint(xxl) {}
+                @include breakpoint(xl) {}
+                @include breakpoint(lg) {}
+                @include breakpoint(md) {}
+                @include breakpoint(sm) {}
+                @include breakpoint(xs) {}
+                @include breakpoint(vs) {}
+            }
+            &.polygon-a-8 {
+                right: 11.5%;
+                top: 88%;
+                width: 2.7%;
+                @include breakpoint(xxxl) {}
+                @include breakpoint(xxl) {}
+                @include breakpoint(xl) {}
+                @include breakpoint(lg) {}
+                @include breakpoint(md) {}
+                @include breakpoint(sm) {}
+                @include breakpoint(xs) {}
+                @include breakpoint(vs) {}
+            }
+            &.polygon-a-9 {
+                right: 5.6%;
+                top: 95%;
+                width: 5.5%;
+                @include breakpoint(xxxl) {}
+                @include breakpoint(xxl) {}
+                @include breakpoint(xl) {}
+                @include breakpoint(lg) {}
+                @include breakpoint(md) {}
+                @include breakpoint(sm) {}
+                @include breakpoint(xs) {}
+                @include breakpoint(vs) {}
+            }
+            &.polygon-a-10{
+                left: 21%;
+                top: 78%;
+                width: 12%;
+                @include breakpoint(xxxl) {}
+                @include breakpoint(xxl) {}
+                @include breakpoint(xl) {}
+                @include breakpoint(lg) {}
+                @include breakpoint(md) {}
+                @include breakpoint(sm) {}
+                @include breakpoint(xs) {}
+                @include breakpoint(vs) {}
+            }
+            &.polygon-a-11{
+                left: 35%;
+                top: 125%;
+                width: 8%;
+                @include breakpoint(xxxl) {}
+                @include breakpoint(xxl) {}
+                @include breakpoint(xl) {}
+                @include breakpoint(lg) {}
+                @include breakpoint(md) {}
+                @include breakpoint(sm) {}
+                @include breakpoint(xs) {}
+                @include breakpoint(vs) {}
+            }
+            &.polygon-a-12{
+                left: 32%;
+                top: 135%;
+                width: 3%;
+                @include breakpoint(xxxl) {}
+                @include breakpoint(xxl) {}
+                @include breakpoint(xl) {}
+                @include breakpoint(lg) {}
+                @include breakpoint(md) {}
+                @include breakpoint(sm) {}
+                @include breakpoint(xs) {}
+                @include breakpoint(vs) {}
+            }
+        }
+    }
+    .landing-sec-3-inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        .landing-sec-3-ico {
+            width: 37.3%;
+            @include breakpoint(xxl) {
+                width: 31.3%;
+            }
+            @include breakpoint(xl) {
+                width: 31.3%;
+                padding-right: 5%;
+            }
+            @include breakpoint(lg) {
+                width: 100%;
+                padding-right: 0;
+                margin-bottom: 86px;
+            }
+            @include breakpoint(md) {}
+            @include breakpoint(sm) {
+                margin-bottom: 52px;
+            }
+            @include breakpoint(xs) {}
+            @include breakpoint(vs) {}
+            img {
+                @include breakpoint(xxxl) {
+                    width: 403px;
+                }
+                @include breakpoint(xxl) {
+                    width: 383px;
+                }
+                @include breakpoint(xl) {}
+                @include breakpoint(lg) {
+                    width: 311px;
+                }
+                @include breakpoint(md) {}
+                @include breakpoint(sm) {
+                    width: 164px;
+                }
+                @include breakpoint(xs) {}
+                @include breakpoint(vs) {}
+            }
+        }
+        .landing-sec-3-caps {
+            width: 62.7%;
+            padding-right: 140px;
+            @include breakpoint(xxl) {
+                padding-right: 100px;
+            }
+            @include breakpoint(lg) {
+                padding-right: 0;
+                width: 100%;
+            }
+        }
+        .label {
+            color: $white;
+            margin-bottom: 47px;
+            @include breakpoint(xxxl) {
+                margin-bottom: 47px;
+            }
+            @include breakpoint(xxl) {
+                margin-bottom: 37px;
+            }
+            @include breakpoint(xl) {
+                margin-bottom: 27px;
+            }
+            @include breakpoint(lg) {
+                margin-bottom: 35px;
+                font-size: 15px;
+            }
+            @include breakpoint(md) {
+                margin-bottom: 52px;
+                font-size: 15px;
+            }
+            @include breakpoint(sm) {
+                padding-left: 33px;
+                font-size: 13px;
+                margin-bottom: 18px;
+            }
+            @include breakpoint(xs) {}
+            @include breakpoint(vs) {}
+            &:before {
+                background: rgba(255, 255, 255, 0.5);
+            }
+        }
+        h4 {
+            font-size: 75px;
+            color: $downy;
+            font-family: $default-regular;
+            margin: 0 0 56px;
+            @include breakpoint(xxxl) {
+                font-size: 63px;
+                margin: 0 0 45px;
+            }
+            @include breakpoint(xxl) {
+                font-size: 60px;
+            }
+            @include breakpoint(xl) {
+                font-size: 48px;
+                margin: 0 0 33px;
+            }
+            @include breakpoint(lg) {
+                font-size: 60px;
+                margin: 0 0 52px;
+                line-height: 1em;
+            }
+            @include breakpoint(md) {
+                font-size: 47px;
+                margin: 0 0 32px;
+            }
+            @include breakpoint(sm) {
+                font-size: 34px;
+                margin: 0 0 17px;
+            }
+            @include breakpoint(xs) {}
+            @include breakpoint(vs) {}
+        }
+        p {
+            font-size: 26.25px;
+            line-height: 40px;
+            letter-spacing: 0.25px;
+            @include breakpoint(xxxl) {
+                font-size: 22px;
+                line-height: 1.55em;
+            }
+            @include breakpoint(xxl) {
+                font-size: 21px;
+            }
+            @include breakpoint(xl) {
+                font-size: 17px;
+            }
+            @include breakpoint(lg) {
+                font-size: 21px;
+                line-height: 1.5em;
+            }
+            @include breakpoint(md) {
+                font-size: 19px;
+                line-height: 1.7em;
+            }
+            @include breakpoint(sm) {
+                font-size: 15px;
+                line-height: 1.9em;
+                letter-spacing: 0px;
+                width: 100%;
+            }
+            @include breakpoint(xs) {}
+            @include breakpoint(vs) {}
+        }
+        .btn {
+            margin-top: 51px;
+            @include breakpoint(xxxl) {
+                margin-top: 40px;
+            }
+            @include breakpoint(xxl) {
+                margin-top: 36px;
+            }
+            @include breakpoint(xl) {
+                margin-top: 26px;
+            }
+            @include breakpoint(lg) {
+                margin-top: 40px;
+                height: 45px;
+                line-height: 45px;
+                font-size: 15px;
+            }
+            @include breakpoint(md) {
+                margin-top: 32px;
+            }
+            @include breakpoint(sm) {
+                margin-top: 10px;
+            }
+            @include breakpoint(xs) {}
+            @include breakpoint(vs) {}
+            &:hover {
+                background: $white;
+                color: $aqua;
+                span {
+                    &::after {
+                        background-image: url(../images/btn-arrow-green.svg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.landing-sec-4 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    padding: 279px 0 355px;
+    position:relative;  
+    z-index:3;
+    @include breakpoint(xxxl) {
+        padding: 261px 0 269px;
+    }
+    @include breakpoint(xxl) {
+        padding: 229px 0 270px;
+    }
+    @include breakpoint(xl) {
+        padding: 178px 0 222px;
+    }
+    @include breakpoint(lg) {
+        padding: 178px 0 310px;
+    }
+    @include breakpoint(md) {
+        padding: 178px 0 108px;
+    }
+    @include breakpoint(sm) {
+        padding: 88px 0 108px;
+    }
+    @include breakpoint(xs) {}
+    @include breakpoint(vs) {}
+    h2,
+    .item span {
+        font-family: $default-bold;
+        color: $alabaster;
+        text-transform: uppercase;
+        font-size: 8.32vw;
+        white-space: nowrap;
+        margin: 0 0 -0.29em;
+        line-height: 1em;
+        @include breakpoint(lg) {
+            font-size: 9.32vw;
+        }
+        @include breakpoint(md) {
+            font-size: 13.32vw;
+        }
+        @include breakpoint(sm) {
+            font-size: 11.32vw;
+        }
+        &.layer1 {
+            margin-left: -10em;
+        }
+        marquee {
+            margin: 0 0 -0.29em;
+            width: 200%;
+            position: relative;
+            left: -100%;
+        }
+    }
+    .promo-carousel {
+        .item_wrap {
+            transform: translateX(0px);
+            width: 400%;
+            position: relative;
+            white-space: nowrap;
+            display: flex;
+        }
+    }
+}
+#main{
+    transform:translate3d(0px, 0px, 0px)!important;
+}
+.pagination {
+    position: absolute;
+    bottom: 50px;
+    z-index: 99999;
+    max-width: 100%;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    @include breakpoint(xl) {
+        bottom:31px;
+    }
+    @include breakpoint(sm) {
+        justify-content: inherit;
+        padding: 0 0 0 7%; 
+    }
+    .item  {
+        color: #fff;
+        font-size: 44px;
+        width: 14.28571428571429%;
+        padding: 0 3%;
+        text-align: center;
+        opacity: 0.2;
+        transition: all 0.3s ease-in-out 0s;
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        cursor: pointer;
+        &:nth-child(1){
+            margin-left: 14.2857%;
+            @media screen and (max-width:1024px) {
+                margin-left: 20%;
+            }
+        }
+        @media screen and (max-width:1024px) {
+            width:20%;
+            font-size: 28px!important;
+        }
+        @include breakpoint(sm) {
+            width: 26px;
+            height: 26px;
+            padding: 0;
+            font-size: 0!important;
+            opacity: 1;
+            border-radius: 50%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 16px 0 0;
+            &:before{
+                width: 7px;
+                height: 7px;
+                background: #fff;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                content: "";
+                margin: auto;
+                border-radius: 50%;
+            }
+        }
+        &.q_current {
+            opacity: 1;
+            @include breakpoint(sm) {
+                border: 2px solid #fff;
+            }
+            .progressbar {
+                background-color: rgba(255, 255, 255, 0.40);
+                width: 100%;
+                -webkit-transition: width 8s linear;
+                transition: width 8s linear;
+                @include breakpoint(sm) {
+                    display: none;
+                }
+            }
+        }
+        .progressbar {
+            width: 0;
+            height: 1px;
+            display: block;
+            margin-top: 20px;
+            @include breakpoint(xl) {
+                margin-top: 6px;
+            }
+            @include breakpoint(sm) {
+        
+            }
+        }
+    }
+}
+.slider_number_main {
+    position: absolute;
+    bottom: 50px;
+    z-index: 99999;
+    max-width: 100%;
+    right: 97px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    @include breakpoint(sm) {
+
+    }
+    .slide_numbers {
+        color: #fff;
+        font-size: 44px;
+        width: 17%;
+        padding: 0 3%;
+        text-align: center;
+        opacity: 0.2;
+        transition: all 0.3s ease-in-out 0s;
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        cursor: pointer;
+        @include breakpoint(sm) {
+        
+        }
+        &.current {
+            opacity: 1;
+            .progressbar {
+                background-color: rgba(255, 255, 255, 0.40);
+                width: 100%;
+                -webkit-transition: width 8s linear;
+                transition: width 8s linear;
+            }
+        }
+        .progressbar {
+            width: 0;
+            height: 1px;
+            display: block;
+            margin-top: 20px;
+        }
+    }
+}
+@media screen and (max-width: 2149px) {
+    .slide_numbers,.pagination .item {
+        font-size: 34px;
+    }
+    .slider_number_main {
+        bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 1799px) {
+    .slide_numbers,.pagination .item {
+        font-size: 28px;
+    }
+    .slider_number_main {
+        bottom: 31px;
+    }
+    .progressbar {
+        margin-top: 6px;
+    }
+}
+.Overlaytext {
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0; 
+    overflow: hidden;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    z-index:2;
+    width: 100vw;
+}
+
+.Overlaytext.currentOverlay,.q_current .Overlaytext {
+    opacity: 1;
+    overflow: visible;
+    visibility: visible; 
+    height: 100%;
+}
+.close-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.landing-sec-5 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    position: relative;
+    z-index:3;
+    @include breakpoint(lg) {
+        padding-top: 118px;
+    }
+    @include breakpoint(sm) {
+        padding-top: 0;
+        background: $gray-bg;
+        padding-bottom: 65px;
+    }
+    .landing-sec-5-video {
+        position: relative;
+        margin-right: -8.7%;
+        width: 48.3%;
+        padding: 0;
+        z-index: 1;
+        @include breakpoint(xxl) {
+            width: 50%;
+            margin-right: 0;
+        }
+        @include breakpoint(lg) {
+            width: 100%;
+            margin-right: 0;
+            max-width: 807px;
+            margin-left: 0;
+        }
+        @include breakpoint(lg) {
+            max-width: 694px;
+        }
+        @include breakpoint(sm) {
+            max-width: 109%;
+            margin-left: -15px;
+            margin-right: -15px;
+            width: 109%;
+        }
+        .landing-sec-5-video-inner {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            >img {
+                width: 100%;
+                transform: scale(1.05);
+                transition: all 0.5s;
+            }
+        }
+        .video-play-ico {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 171px;
+            width: 171px;
+            margin: auto;
+            @include breakpoint(xxxl) {
+                height: 145px;
+                width: 145px;
+            }
+            @include breakpoint(xxl) {}
+            @include breakpoint(xl) {
+                height: 115px;
+                width: 115px;
+            }
+            @include breakpoint(lg) {}
+            @include breakpoint(md) {}
+            @include breakpoint(sm) {
+                height: 62px;
+                width: 62px;
+            }
+            @include breakpoint(xs) {}
+            @include breakpoint(vs) {}
+            &:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background: $white;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                border-radius: 50%;
+                transition: all 0.5s;
+                z-index: 1;
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                border-left: 30px solid #3d4146;
+                border-top: 17px solid transparent;
+                border-bottom: 17px solid transparent;
+                height: 0;
+                width: 0;
+                z-index: 2;
+                transition: all 0.5s;
+                @include breakpoint(sm) {
+                    border-left: 11px solid #3d4146;
+                    border-top: 7px solid transparent;
+                    border-bottom: 7px solid transparent;
+                }
+            }
+            &:hover {
+                &:after {
+                    transform: scale(1.2);
+                }
+                &:before {
+                    transform: scale(0.9);
+                }
+                +img {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+    .landing-sec-5-caps {
+        width: 60.4%;
+        padding: 256px 285px 256px 430px;
+        background: $gray-bg;
+        height: 100%;
+        @include breakpoint(xxxl) {
+            padding: 214px 255px 216px 361px;
+        }
+        @include breakpoint(xxl) {
+            width: 50%;
+            padding: 204px 166px 203px 98px;
+            position: relative;
+            &:before {
+                content: "";
+                position: absolute;
+                width: 274px;
+                top: 0;
+                bottom: 0;
+                left: -274px;
+                background: $gray-bg;
+            }
+        }
+        @include breakpoint(xl) {
+            width: 47%;
+            padding: 159px 146px 203px 81px;
+            &:before {
+                left: -220px;
+                width: 244px;
+            }
+        }
+        @include breakpoint(lg) {
+            width: 100%;
+            padding: 89px 146px 203px 90px;
+            max-width: 775px;
+            margin-left: 18%;
+            &:before {
+                top: -610px;
+                width: 100%;
+                left: 0;
+                z-index: -1;
+                max-width: 100%;
+            }
+        }
+        @include breakpoint(md) {
+            padding: 201px 62px 194px 86px;
+            max-width: 694px;
+            margin-left: 0;
+            &:before {
+                top: 0;
+                width: 100%;
+                left: 0;
+                z-index: -1;
+                max-width: 100%;
+            }
+        }
+        @include breakpoint(sm) {
+            padding: 73px 0 33px 8px;
+        }
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+    }
+    .landing-sec-5-row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    h4 {
+        font-size: 75px;
+        font-family: $default-regular;
+        color: $silver;
+        line-height: 1.1em;
+        width: 510px;
+        max-width: 100%;
+        margin: 0 0 52px;
+        @include breakpoint(xxxl) {
+            font-size: 62px;
+            margin-bottom: 44px;
+        }
+        @include breakpoint(xxl) {
+            font-size: 60px;
+            line-height: 1.05em;
+        }
+        @include breakpoint(xl) {
+            font-size: 48px;
+            margin-bottom: 38px;
+            line-height: 1.1em;
+        }
+        @include breakpoint(lg) {
+            font-size: 60px;
+            margin-bottom: 48px;
+        }
+        @include breakpoint(md) {}
+        @include breakpoint(sm) {
+            font-size: 34px;
+            margin-bottom: 18px;
+            width: 90%;
+        }
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+    }
+    p {
+        letter-spacing: 0.2px;
+        @include breakpoint(xxxl) {
+            font-size: 18px;
+            line-height: 1.75em;
+        }
+        @include breakpoint(xxl) {
+            font-size: 17px;
+            line-height: 1.8em;
+        }
+        @include breakpoint(xl) {
+            font-size: 14px;
+        }
+        @include breakpoint(lg) {
+            font-size: 17px;
+        }
+        @include breakpoint(md) {}
+        @include breakpoint(sm) {
+            font-size: 14px;
+            line-height: 2em;
+        }
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+    }
+    .label {
+        padding-left: 64px;
+        @include breakpoint(xxxl) {
+            padding-left: 53px;
+        }
+        @include breakpoint(xxl) {}
+        @include breakpoint(xl) {
+            padding-left: 43px;
+        }
+        @include breakpoint(lg) {
+            padding-left: 55px;
+            font-size: 15px;
+            margin-bottom: 34px;
+        }
+        @include breakpoint(md) {
+            padding-left: 54px;
+            font-size: 17px;
+            margin-bottom: 34px;
+            letter-spacing: 0;
+        }
+        @include breakpoint(sm) {
+            padding-left: 31px;
+            font-size: 14px;
+            margin-bottom: 17px;
+        }
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+    }
+    .btn {
+        margin-top: 55px;
+        padding: 0em 46px 0;
+        @include breakpoint(xxxl) {
+            margin-top: 41px;
+        }
+        @include breakpoint(xxl) {
+            padding: 0em 37px 0;
+            margin-top: 39px;
+        }
+        @include breakpoint(xl) {
+            padding: 0 31px;
+            margin-top: 28px;
+        }
+        @include breakpoint(lg) {
+            padding: 0em 36px 0;
+            margin-top: 39px;
+            height: 45px;
+            line-height: 50px;
+            font-size: 16px;
+        }
+        @include breakpoint(md) {}
+        @include breakpoint(sm) {
+            padding: 0em 35px 0;
+            margin-top: 19px;
+            height: 41px;
+            line-height: 46px;
+            font-size: 15px;
+        }
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+    }
+}
+
+.mac{
+    .landing-sec-5{
+        .btn{
+            @include breakpoint(lg) {
+                line-height: 46px;
+            }
+            @include breakpoint(md) {}
+            @include breakpoint(sm) {
+                line-height: 42px;
+            }
+        }
+    }
+}
+
+.landing-sec-6 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    padding: 296px 0 301px;
+    position: relative;
+    z-index:3;
+    @include breakpoint(xxxl) {
+        padding: 259px 0 249px;
+    }
+    @include breakpoint(xxl) {
+        padding: 232px 0 236px;
+    }
+    @include breakpoint(xl) {
+        padding: 179px 0 186px;
+    }
+    @include breakpoint(lg) {
+        padding: 186px 0 188px;
+    }
+    @include breakpoint(md) {}
+    @include breakpoint(sm) {
+        padding: 94px 0 81px;
+    }
+    @include breakpoint(xs) {}
+    @include breakpoint(vs) {}
+    .polygon-b {
+        position: absolute;
+        &.polygon-b-1 {
+            left: 10.4%;
+            top: 34%;
+            width: 6.6%;
+            @include breakpoint(xxxl) {}
+            @include breakpoint(xxl) {}
+            @include breakpoint(xl) {}
+            @include breakpoint(lg) {}
+            @include breakpoint(md) {
+                left: 15.4%;
+                top: 47%;
+                width: 14.6%;
+            }
+            @include breakpoint(sm) {
+                left: 12.4%;
+                top: 45%;
+                width: 18.6%;
+            }
+            @include breakpoint(xs) {}
+            @include breakpoint(vs) {}
+        }
+        &.polygon-b-2 {
+            left: 14%;
+            top: 46%;
+            width: 12.1%;
+            @include breakpoint(xxxl) {}
+            @include breakpoint(xxl) {}
+            @include breakpoint(xl) {}
+            @include breakpoint(lg) {}
+            @include breakpoint(md) {
+                left: 24%;
+                top: 55%;
+                width: 32.1%;
+            }
+            @include breakpoint(sm) {
+                width: 38.1%;
+            }
+            @include breakpoint(xs) {}
+            @include breakpoint(vs) {}
+        }
+        &.polygon-b-3 {
+            left: 22.5%;
+            top: 71%;
+            width: 8.5%;
+            @include breakpoint(xxxl) {}
+            @include breakpoint(xxl) {}
+            @include breakpoint(xl) {}
+            @include breakpoint(lg) {}
+            @include breakpoint(md) {
+                left: 32.5%;
+                top: 74%;
+                width: 9.5%;
+            }
+            @include breakpoint(sm) {
+                left: 32.5%;
+                top: 78%;
+                width: 12.5%;
+            }
+            @include breakpoint(xs) {}
+            @include breakpoint(vs) {}
+        }
+        &.polygon-b-4 {
+            left: 19.6%;
+            top: 85%;
+            width: 2.7%;
+            @include breakpoint(xxxl) {}
+            @include breakpoint(xxl) {}
+            @include breakpoint(xl) {}
+            @include breakpoint(lg) {}
+            @include breakpoint(md) {}
+            @include breakpoint(sm) {
+                left: 49.6%;
+                top: 68%;
+                width: 22.7%;
+            }
+            @include breakpoint(xs) {}
+            @include breakpoint(vs) {}
+        }
+        &.polygon-b-5 {
+            left: 9.5%;
+            top: 105%;
+            width: 1.6%;
+            @include breakpoint(xxxl) {}
+            @include breakpoint(xxl) {}
+            @include breakpoint(xl) {}
+            @include breakpoint(lg) {}
+            @include breakpoint(md) {}
+            @include breakpoint(sm) {}
+            @include breakpoint(xs) {}
+            @include breakpoint(vs) {}
+        }
+        &.polygon-b-6 {
+            left: 3.8%;
+            top: 108%;
+            width: 6.5%;
+            @include breakpoint(xxxl) {}
+            @include breakpoint(xxl) {}
+            @include breakpoint(xl) {}
+            @include breakpoint(lg) {}
+            @include breakpoint(md) {}
+            @include breakpoint(sm) {}
+            @include breakpoint(xs) {}
+            @include breakpoint(vs) {}
+        }
+        &.polygon-b-7 {
+            left: 12.1%;
+            top: 118%;
+            width: 4.5%;
+            @include breakpoint(xxxl) {}
+            @include breakpoint(xxl) {}
+            @include breakpoint(xl) {}
+            @include breakpoint(lg) {}
+            @include breakpoint(md) {}
+            @include breakpoint(sm) {}
+            @include breakpoint(xs) {}
+            @include breakpoint(vs) {}
+        }
+        &.polygon-b-8 {
+            left: 9.8%;
+            top: 136%;
+            width: 2.7%;
+            @include breakpoint(xxxl) {}
+            @include breakpoint(xxl) {}
+            @include breakpoint(xl) {}
+            @include breakpoint(lg) {}
+            @include breakpoint(md) {}
+            @include breakpoint(sm) {}
+            @include breakpoint(xs) {}
+            @include breakpoint(vs) {}
+        }
+        &.polygon-b-9 {
+            left: 12.1%;
+            top: 98%;
+            width: 5.5%;
+            @include breakpoint(xxxl) {}
+            @include breakpoint(xxl) {}
+            @include breakpoint(xl) {}
+            @include breakpoint(lg) {}
+            @include breakpoint(md) {}
+            @include breakpoint(sm) {}
+            @include breakpoint(xs) {}
+            @include breakpoint(vs) {}
+        }
+    }
+    blockquote {
+        padding-right: 50px;
+        padding-left: 27px;
+        margin: 0;
+        @include breakpoint(xxl) {
+            padding-left: 0;
+            padding-right: 130px;
+        }
+        @include breakpoint(lg) {
+            padding-right: 0;
+        }
+        p {
+            font-family: $default-regular;
+            font-size: 90px;
+            color: $alto;
+            line-height: 1.15em;
+            margin: 0 0 52px;
+            @include breakpoint(xxxl) {
+                font-size: 75px;
+                margin: 0 0 34px;
+            }
+            @include breakpoint(xxl) {
+                font-size: 71px;
+                letter-spacing: 0.3px;
+            }
+            @include breakpoint(xl) {
+                font-size: 56px;
+                letter-spacing: 0.4px;
+                margin-bottom: 27px;
+            }
+            @include breakpoint(lg) {
+                font-size: 58px;
+                letter-spacing: 0.2px;
+                margin-bottom: 21px;
+                line-height: 1.14em;
+            }
+            @include breakpoint(md) {
+                font-size: 52px;
+                letter-spacing: 0;
+                margin-bottom: 16px;
+                line-height: 1.14em;
+            }
+            @include breakpoint(sm) {
+                font-size: 30px;
+                margin-bottom: 1px;
+            }
+            @include breakpoint(xs) {}
+            @include breakpoint(vs) {}
+        }
+        label {
+            font-size: 45px;
+            color: $alto;
+            font-family: $default-regular;
+            @include breakpoint(xxxl) {
+                font-size: 38px;
+            }
+            @include breakpoint(xxl) {
+                font-size: 35px;
+            }
+            @include breakpoint(xl) {
+                font-size: 28px;
+            }
+            @include breakpoint(lg) {
+                font-size: 25px;
+            }
+            @include breakpoint(md) {
+                font-size: 24px;
+            }
+            @include breakpoint(sm) {
+                font-size: 17px;
+            }
+            @include breakpoint(xs) {
+                font-size: 16px;
+            }
+            @include breakpoint(vs) {}
+        }
+    }
+}
+
+.video-popup-main {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(11, 11, 11, .85);
+    z-index: 9999999;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+    height: 0;
+    overflow: hidden;
+    .video-popup-inner {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .video-popup-block {
+        width: 75%;
+        margin: auto;
+        position: relative;
+        transition: all .5s ease;
+        transform: scale(.7);
+        opacity: 0;
+        background: #000;
+        box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+        z-index: 1;
+        >div {
+            padding-top: 56.25%;
+            position: relative;
+        }
+        iframe {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .close-icon {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        right: 0;
+        bottom: calc(100% + 5px);
+        &:before {
+            content: "×";
+            font-size: 40px;
+            line-height: 26px;
+            text-align: center;
+            transition: all .3s ease;
+            opacity: .7;
+            color: $white;
+        }
+        &:hover {
+            &:before {
+                transform: rotate(90deg);
+                opacity: 1;
+            }
+        }
+    }
+    &.show-popup {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        height: auto;
+        .video-popup-block {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+}
+
+.landing-sec-7 {
+    padding-bottom: 423px;
+    position: relative;
+    z-index: 4;
+    @include breakpoint(xxxl) {
+        padding-bottom: 356px;
+    }
+    @include breakpoint(xxl) {
+        padding-bottom: 253px;
+    }
+    @include breakpoint(xl) {
+        padding-bottom: 200px;
+    }
+    @include breakpoint(md) {
+        padding-bottom: 50px;
+    }
+    @include breakpoint(sm) {
+        background: $gray-bg;
+        padding-top: 99px;
+    }
+    .container {
+        @include breakpoint(xxl) {
+            width: 1338px;
+        }
+        @include breakpoint(xl) {
+            width: 1078px;
+        }
+        @include breakpoint(lg) {}
+        @include breakpoint(md) {}
+        @include breakpoint(sm) {}
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+    }
+}
+
+.testimonial-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    @include breakpoint(lg) {
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 696px;
+        margin-left: 26.4%;
+    }
+    @include breakpoint(md) {
+        max-width: 696px;
+        margin: 0 auto;
+        padding: 60px 51px 60px 90px;
+        background: $gray-bg;
+    }
+    @include breakpoint(sm) {
+        padding: 0 11px;
+    }
+    .testimonial-img {
+        width: 47.8%;
+        position: relative;
+        z-index: 1;
+        @include breakpoint(xxl) {
+            width: 50%;
+        }
+        @include breakpoint(xl) {}
+        @include breakpoint(lg) {
+            width: 100%;
+            max-width: 630px;
+            margin-left: -226px;
+        }
+        @include breakpoint(md) {
+            margin-left: 0;
+        }
+        @include breakpoint(sm) {
+            max-width: 324px;
+            width: 100%;
+        }
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {
+            max-width: 267px;
+        }
+    }
+    .testimonial-caps {
+        width: 52.2%;
+        padding: 215px 150px 170px 227px;
+        background: $gray-bg;
+        position: relative;
+        @include breakpoint(xxxl) {
+            padding: 182px 140px 142px 197px;
+        }
+        @include breakpoint(xxl) {
+            width: 50%;
+            padding: 129px 97px 130px 102px;
+        }
+        @include breakpoint(xl) {
+            padding: 100px 97px 96px 84px;
+        }
+        @include breakpoint(lg) {
+            width: 100%;
+            padding: 170px 106px 160px 103px;
+        }
+        @include breakpoint(md) {
+            padding: 150px 0 70px 0;
+        }
+        @include breakpoint(sm) {
+            padding: 75px 0 70px 0;
+        }
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+        &:before {
+            content: "";
+            position: absolute;
+            width: 210px;
+            left: -210px;
+            background: $gray-bg;
+            top: 0;
+            bottom: 0;
+            @include breakpoint(xxxl) {
+                width: 170px;
+                left: -170px;
+            }
+            @include breakpoint(xxl) {}
+            @include breakpoint(xl) {
+                width: 160px;
+                left: -133px;
+            }
+            @include breakpoint(lg) {
+                top: -710px;
+                width: 100%;
+                left: 0;
+                z-index: -1;
+                max-width: 100%;
+            }
+            @include breakpoint(md) {
+                top: 0;
+            }
+            @include breakpoint(sm) {}
+            @include breakpoint(xs) {}
+            @include breakpoint(vs) {}
+        }
+        p {
+            font-size: 35px;
+            color: $orange;
+            line-height: 50px;
+            @include breakpoint(xxxl) {
+                font-size: 29px;
+                line-height: 42px;
+            }
+            @include breakpoint(xxl) {
+                font-size: 28px;
+                line-height: 1.45em;
+            }
+            @include breakpoint(xl) {
+                font-size: 21px;
+                line-height: 1.58em;
+                margin-bottom: 13px;
+            }
+            @include breakpoint(lg) {
+                font-size: 28px;
+                line-height: 1.44em;
+                margin-bottom: 13px;
+                letter-spacing: 0.1px;
+            }
+            @include breakpoint(md) {
+                width: 86%;
+            }
+            @include breakpoint(sm) {
+                width: 100%;
+                font-size: 20px;
+            }
+            @include breakpoint(xs) {}
+            @include breakpoint(vs) {}
+        }
+        .testi-oth {
+            font-size: 17px;
+            line-height: 1.2em;
+            color: $nobel;
+            margin: 35px 0 0;
+            display: inline-block;
+            padding: 31px 0 0;
+            position: relative;
+            @include breakpoint(xxxl) {
+                font-size: 17px;
+                margin: 24px 0 0;
+                padding: 28px 0 0;
+            }
+            @include breakpoint(xxl) {
+                margin: 21px 0 0;
+                letter-spacing: -0.3px;
+            }
+            @include breakpoint(xl) {
+                // font-size: 14px;
+                // margin: 21px 0 0;
+                letter-spacing: -0.3px;
+                // padding-top: 16px;
+            }
+            @include breakpoint(lg) {
+                font-size: 17px;
+                margin: 37px 0 0;
+                letter-spacing: -0.3px;
+                padding-top: 24px;
+            }
+            @include breakpoint(md) {
+                margin: 63px 0 0;
+            }
+            @include breakpoint(sm) {
+                margin: 29px 0 0;
+                // font-size: 15px;
+                // padding-top: 19px;
+            }
+            @include breakpoint(xs) {}
+            @include breakpoint(vs) {}
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 1px;
+                width: 50px;
+                background: $alto;
+                @include breakpoint(sm) {
+                    width: 25px;
+                }
+            }
+            span {
+                color: $black;
+                @include breakpoint(xxl) {
+                    letter-spacing: -0.5px;
+                }
+            }
+        }
+    }
+}
+
+.testimonials {
+    display: flex;
+    position: relative;
+    .slick-arrow {
+        height: 105px;
+        width: 105px;
+        background-color: $silver;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s;
+        background-size: 0;
+        background-image: url(../images/btn-arrow-orange.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        top: auto;
+        bottom: 0;
+        left: 673px;
+        right: auto;
+        position: absolute;
+        z-index: 1;
+        cursor: pointer;
+        @include breakpoint(xxxl) {
+            height: 89px;
+            width: 89px;
+            left: 563px;
+        }
+        @include breakpoint(xxl) {
+            width: 84px;
+            height: 84px;
+            left: 480px;
+        }
+        @include breakpoint(xl) {
+            width: 67px;
+            height: 70px;
+            left: 384px;
+            bottom: 1px;
+        }
+        @include breakpoint(lg) {
+            width: 81px;
+            height: 81px;
+            top: 475px;
+            right: 18%;
+            left: auto;
+        }
+        @include breakpoint(md) {
+            width: 71px;
+            height: 71px;
+            right: 10%;
+            top: 479px;
+        }
+        @include breakpoint(sm) {
+            width: 41px;
+            height: 41px;
+            top: 246px;
+            left: 45%;
+        }
+        @include breakpoint(vs) {
+            top: 203px;
+            left: 43%;
+        }
+        &:hover {
+            background-color: $black;
+            background-size: 14px 28px;
+            @include breakpoint(xl) {
+                background-size: 9px auto;
+            }
+            img{
+                opacity: 0;
+            }
+        }
+        &.slick-next {
+            margin-left: 106px;
+            @include breakpoint(xxxl){
+                margin-left: 90px;
+            }
+            @include breakpoint(xxl){
+                margin-left: 85px;
+            }
+            @include breakpoint(xl){
+                margin-left: 68px;
+            }
+            @include breakpoint(md){
+                margin-left: 0;
+            }
+            @include breakpoint(sm){
+                margin-left: 43px;
+            }
+        }
+        &.slick-prev {
+            transform: rotate(180deg);
+            @include breakpoint(lg){
+                margin-right: 82px;
+            }
+            @include breakpoint(md){
+                margin-right: 72px;
+            }
+            @include breakpoint(sm) {
+                margin-right: 0;
+            }
+        }
+        img {
+            width: 14px;
+            @include breakpoint(xl) {
+                width: 9px;
+            }
+        }
+    }
+    .testimonial-img {
+        overflow: hidden;
+    }
+    .testimonial-img-bg {
+        transition: all 0.9s;
+        transform: scale(1.2);
+        img {
+            width: 100%;
+        }
+    }
+    .active, .slick-active {
+        .testimonial-img-bg {
+            transform: scale(1);
+        }
+    }
+    .item,
+    .testimonial-row,
+    .testimonial-caps {
+        height: 100%;
+        min-height: 875px;
+        @include breakpoint(xxxl) {
+            min-height: 737px;
+        }
+        @include breakpoint(xxl) {
+            min-height: 655px;
+        }
+        @include breakpoint(xl) {
+            min-height: 536px;
+        }
+        @include breakpoint(lg) {
+            height: auto;
+        }
+        @include breakpoint(sm) {
+            min-height: auto;
+        }
+    }
+}
+
+.landing-sec-8 {
+    background: $gray-bg;
+    padding: 490px 0 460px;
+    position: relative;
+    z-index: 4;
+    @include breakpoint(xxxl) {
+        padding: 412px 0 383px;
+    }
+    @include breakpoint(xxl) {
+        padding: 188px 0 178px;
+    }
+    @include breakpoint(xl) {
+        padding: 145px 0 138px;
+    }
+    @include breakpoint(lg) {
+        padding: 188px 0 78px;
+    }
+    @include breakpoint(md) {
+        padding: 44px 0 96px;
+    }
+    @include breakpoint(sm) {
+        padding: 10px 0 96px;
+    }
+    @include breakpoint(xs) {
+        padding: 10px 0 24px;
+    }
+    @include breakpoint(vs) {}
+    .container {
+        @include breakpoint(xxl) {
+            width: 1358px;
+        }
+        @include breakpoint(xl) {
+            width: 1078px;
+        }
+        @include breakpoint(lg) {}
+        @include breakpoint(md) {}
+        @include breakpoint(sm) {
+            width: 278px;
+        }
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+    }
+    .landing-sec-8-block {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    .landing-sec-8-icon {
+        padding: 0 57px 0 0;
+        @include breakpoint(xl) {
+            padding: 0 27px 0 0;
+        }
+        @include breakpoint(lg) {
+            padding: 0;
+            margin-right: 50px;
+            margin-left: 12px;
+        }
+        @include breakpoint(md) {
+            margin-right: 61px;
+        }
+        @include breakpoint(sm) {
+            margin-right: 26px;
+            margin-left: 32px;
+        }
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+    }
+    .landing-sec-8-caps {
+        padding: 0;
+        width: 400px;
+        h3 {
+            font-size: 111px;
+            color: $alto-dark;
+            font-family: $default-regular;
+            margin: 0 0 -5px;
+            @include breakpoint(xxxl) {
+                font-size: 93px;
+                margin: 0 0 -10px;
+            }
+            @include breakpoint(xxl) {
+                font-size: 78px;
+                margin: 0 0 -3px;
+            }
+            @include breakpoint(xl) {
+                font-size: 61px;
+                margin: 0 0 -3px;
+            }
+            @include breakpoint(lg) {
+                font-size: 77px;
+                line-height: 1em;
+                margin-bottom: 10px;
+            }
+            @include breakpoint(md) {
+                font-size: 98px;
+                line-height: 1em;
+                margin-bottom: 10px;
+            }
+            @include breakpoint(sm) {
+                font-size: 55px;
+                line-height: 1em;
+                margin-bottom: 3px;
+            }
+            @include breakpoint(xs) {}
+            @include breakpoint(vs) {}
+        }
+        p {
+            font-size: 27px;
+            text-transform: uppercase;
+            line-height: 30px;
+            letter-spacing: 1.2px;
+            @include breakpoint(xxxl) {
+                font-size: 23px;
+                line-height: 27px;
+                letter-spacing: 0.5px;
+            }
+            @include breakpoint(xxl) {
+                font-size: 20px;
+                line-height: 23px;
+            }
+            @include breakpoint(xl) {
+                font-size: 16px;
+                line-height: 21px;
+            }
+            @include breakpoint(lg) {
+                font-size: 19px;
+            }
+            @include breakpoint(md) {
+                font-size: 24px;
+                line-height: 1.1em;
+            }
+            @include breakpoint(sm) {
+                font-size: 13px;
+            }
+            @include breakpoint(xs) {}
+            @include breakpoint(vs) {}
+        }
+    }
+}
+
+.landing-sec-8-inner {
+    display: flex;
+    margin: 0 -50px;
+    @include breakpoint(lg) {
+        flex-direction: column;
+        align-items: center;
+    }
+    @include breakpoint(xxxl) {
+        margin: 0 -30px;
+    }
+    @include breakpoint(xxl) {}
+    @include breakpoint(xl) {}
+    @include breakpoint(lg) {}
+    @include breakpoint(md) {}
+    @include breakpoint(sm) {}
+    @include breakpoint(xs) {}
+    @include breakpoint(vs) {}
+    .landing-sec-8-block {
+        width: 33.33%;
+        padding: 0 50px;
+        @include breakpoint(xxxl) {
+            padding: 0 30px;
+        }
+        @include breakpoint(xxl) {}
+        @include breakpoint(xl) {}
+        @include breakpoint(lg) {
+            padding: 0;
+            max-width: 390px;
+            width: 100%;
+            margin-bottom: 64px;
+        }
+        @include breakpoint(md) {
+            max-width: 490px;
+            margin-bottom: 83px;
+        }
+        @include breakpoint(sm) {
+            margin-bottom: 56px;
+        }
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+    }
+}
+
+.lets-talk-sec {
+    text-align: center;
+    background: $gray-dark-bg;
+    padding: 353px 0 319px;
+    position: relative;
+    z-index: 4;
+    @include breakpoint(xxxl) {
+        padding: 292px 0 260px;
+    }
+    @include breakpoint(xxl) {
+        padding: 242px 0 214px;
+    }
+    @include breakpoint(xl) {
+        padding: 186px 0 187px;
+    }
+    @include breakpoint(lg) {
+        padding: 175px 0 247px;
+    }
+    @include breakpoint(md) {}
+    @include breakpoint(sm) {
+        padding: 55px 0 123px;
+    }
+    @include breakpoint(xs) {}
+    @include breakpoint(vs) {}
+    .lets-talk-midd-outer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h3 {
+        color: $white;
+        font-size: 22px;
+        display: inline-flex;
+        margin-right: 75px;
+        letter-spacing: 1px;
+        margin-bottom: 14px;
+        @include breakpoint(xxxl) {
+            font-size: 19px;
+            padding-left: 78px;
+            letter-spacing: 0.5px;
+        }
+        @include breakpoint(xxl) {
+            font-size: 16px;
+            padding-left: 57px;
+            margin-right: 57px;
+            margin-bottom: 6px;
+        }
+        @include breakpoint(xl) {}
+        @include breakpoint(lg) {
+            margin-bottom: 15px;
+        }
+        @include breakpoint(md) {}
+        @include breakpoint(sm) {
+            font-size: 14px;
+            margin-bottom: 15px;
+            padding-left: 35px;
+            margin-right: 0;
+        }
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+        &:before {
+            width: 58px;
+            top: -3px;
+            @include breakpoint(xxxl) {
+                width: 50px;
+            }
+            @include breakpoint(xxl) {
+                width: 41px;
+            }
+            @include breakpoint(xl) {}
+            @include breakpoint(lg) {}
+            @include breakpoint(md) {}
+            @include breakpoint(sm) {
+                width: 25px;
+            }
+            @include breakpoint(xs) {}
+            @include breakpoint(vs) {}
+        }
+    }
+    h4 {
+        font-size: 170px;
+        color: $dove-gray;
+        font-family: $helsinkibook;
+        margin: 0;
+        transition: all 0.5s;
+        @include breakpoint(xxxl) {
+            font-size: 143px;
+        }
+        @include breakpoint(xxl) {
+            font-size: 123px;
+        }
+        @include breakpoint(xl) {
+            font-size: 100px;
+            line-height: 1em;
+        }
+        @include breakpoint(lg) {
+            font-size: 127px;
+        }
+        @include breakpoint(md) {}
+        @include breakpoint(sm) {
+            font-size: 59px;
+        }
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+        &:hover {
+            color: $white;
+            transform: scale(1.08)!important;
+        }
+        a {
+            color: $dove-gray;
+            &:hover {
+                color: $white;
+            }
+        }
+    } 
+    p{
+        color: $white;
+    }
+    .btn{
+        background: $orange; 
+        color: $white;
+        span{
+            &:after{
+                display: none;
+            }
+        }
+        &:hover{
+            background: $white; 
+            color: $orange;
+        }
+    }
+}
+
+.mac{
+    .lets-talk-sec{
+        h3{
+            &:before{
+                top: 0px;
+            }
+        }
+        h4{
+            line-height: 0.8em;
+        }
+    }
+}
+
+.item_wrap {
+    display: flex;
+}
+
+#grouploop_2 {
+    left: -120%;
+    position: relative;
+    margin-bottom: -2.5%;
+    @include breakpoint(xxxl) {}
+    @include breakpoint(xxl) {}
+    @include breakpoint(xl) {
+        margin-bottom: -2.8%;
+    }
+    @include breakpoint(lg) {
+        margin-bottom: -3%;
+    }
+    @include breakpoint(md) {
+        margin-bottom: -4%;
+    }
+    @include breakpoint(sm) {
+        margin-bottom: -3.5%;
+    }
+    @include breakpoint(xs) {
+        margin-bottom: -3.8%;
+    }
+    @include breakpoint(vs) {
+        margin-bottom: -5%;
+    }
+}
+
+#grouploop_4 {
+    right: -20%;
+    position: relative;
+}
+body{
+    .vs-scroll-view{
+        display:none;
+    }
+}
+.q_slide .slide .image-wrapper{
+    transform: matrix(1.1, 0, 0, 1.1, 0, 0);
+}
+.fancybox-container {
+    z-index: 999929999 !important;
+}
+.fancybox-is-open {
+    .fancybox-bg {
+        
+        opacity: 1 !important;
+    }
+}
+.fancybox-bg {
+    background: rgba(11,11,11,.85) !important;
+}

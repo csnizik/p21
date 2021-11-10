@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'helsinkiblack';
+    src: url('ludwig_type_-_helsinki-black-webfont.woff2') format('woff2'),
+         url('ludwig_type_-_helsinki-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helsinkibold';
+    src: url('ludwig_type_-_helsinki-bold-webfont.woff2') format('woff2'),
+         url('ludwig_type_-_helsinki-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helsinkibook';
+    src: url('ludwig_type_-_helsinki-book-webfont.woff2') format('woff2'),
+         url('ludwig_type_-_helsinki-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helsinkifat';
+    src: url('ludwig_type_-_helsinki-fat-webfont.woff2') format('woff2'),
+         url('ludwig_type_-_helsinki-fat-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helsinkihairline';
+    src: url('ludwig_type_-_helsinki-hairline-webfont.woff2') format('woff2'),
+         url('ludwig_type_-_helsinki-hairline-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helsinkilight';
+    src: url('ludwig_type_-_helsinki-light-webfont.woff2') format('woff2'),
+         url('ludwig_type_-_helsinki-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helsinkiregular';
+    src: url('ludwig_type_-_helsinki-regular-webfont.woff2') format('woff2'),
+         url('ludwig_type_-_helsinki-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

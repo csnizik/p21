@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'helsinkiblack';
+    src: url('fonts/ludwig_type_-_helsinki-black-webfont.woff2') format('woff2'),
+         url('fonts/ludwig_type_-_helsinki-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} 
+@font-face {
+    font-family: 'helsinkibold';
+    src: url('../fonts/ludwig_type_-_helsinki-bold-webfont.woff2') format('woff2'),
+         url('../fonts/ludwig_type_-_helsinki-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helsinkibook';
+    src: url('../fonts/ludwig_type_-_helsinki-book-webfont.woff2') format('woff2'),
+         url('../fonts/ludwig_type_-_helsinki-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helsinkifat';
+    src: url('../fonts/ludwig_type_-_helsinki-fat-webfont.woff2') format('woff2'),
+         url('../fonts/ludwig_type_-_helsinki-fat-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helsinkihairline';
+    src: url('../fonts/ludwig_type_-_helsinki-hairline-webfont.woff2') format('woff2'),
+         url('../fonts/ludwig_type_-_helsinki-hairline-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helsinkilight';
+    src: url('../fonts/ludwig_type_-_helsinki-light-webfont.woff2') format('woff2'),
+         url('../fonts/ludwig_type_-_helsinki-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helsinkiregular';
+    src: url('../fonts/ludwig_type_-_helsinki-regular-webfont.woff2') format('woff2'),
+         url('../fonts/ludwig_type_-_helsinki-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Courier';
+    src: url('../fonts/Courier.eot');
+    src: url('../fonts/Courier.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Courier.woff2') format('woff2'),
+        url('../fonts/Courier.woff') format('woff'),
+        url('../fonts/Courier.ttf') format('truetype'),
+        url('../fonts/Courier.svg#Courier') format('svg');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+
+ 
+$default:'helsinkilight';
+$default-regular:'helsinkiregular';
+$default-bold:'helsinkibold';
+$helsinkibook:'helsinkibook';
+$robotofont:'Roboto', sans-serif;
+$helsinkihairline: 'helsinkihairline';
+$courier: 'Courier';

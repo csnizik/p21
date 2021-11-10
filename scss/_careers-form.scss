@@ -1,0 +1,99 @@
+.contact_side_modal{
+    .modal_close_btn {
+        width: 100%; 
+        span{
+            color: #afc03c;
+            font-weight: 500;
+            float: left;
+            padding: 10px 0 0 0;
+        }
+    }
+}
+#apply-now-btn{
+    .modal_title{
+        h3{
+            margin: 0 0 4px;
+        }
+        p{
+            margin: 0;
+        }
+    }
+    &.contact_side_modal{
+        .modal_title{
+            padding-top: 30px;
+        }
+        .modal_con_form{
+            padding-top: 30px;
+        }
+    } 
+    .form-row{
+        .green-btn{
+            background: #afc03c;
+            line-height: normal;
+            font-size: 17px!important;
+            height: 61px;
+            padding: 5px 20px 0;
+            width: 355px!important;
+            @include breakpoint(sm)
+            {
+                height: 50px;
+            }
+            &:hover{
+                background: #9bad24;
+            }
+        }
+    }
+    .modal_content{
+        a{
+            color: #afc03c!important;
+        }
+    }
+}
+.form-col-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -24px;
+} 
+.form-col-2{
+    width: 50%;
+    padding: 0 24px;
+}
+.radio-2-btns-block{
+    display: flex;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    
+    > div{
+        width: 50%;
+        height: 50px;
+        position: relative;
+        border-left: 1px solid #dadada;
+        @include breakpoint(sm) {
+            height: 40px;
+        }
+        &:first-child{
+            border-left: 0;
+        }
+        span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+        }
+        input{
+            position: absolute;
+            width: 100%!important;
+            height: 100%!important;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            z-index: 1;
+            cursor: pointer;
+        }
+        input:checked + span{
+            background: #afc03c;
+            color: $white;
+        }
+    }
+}

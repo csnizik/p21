@@ -1,0 +1,293 @@
+.landing-sec-1{
+    &.leadership-sec-1 {
+        padding-bottom: 262px;
+        @include breakpoint(xl) {
+            padding: 60px 0 213px;
+        }
+        @include breakpoint(lg) {
+            padding: 100px 0 150px;
+        }
+        @include breakpoint(sm)
+        {
+            padding: 75px 0 60px;
+        }
+    }
+}
+.container-1046{
+    width: 1046px;
+    max-width: 100%;
+}
+.landing-sec-2{
+    &.leadership-sec-2{
+        .landing-sec-2-tit-caps{
+            width: 100%;
+            margin: 0 0 61px;
+            @include breakpoint(xl) {
+                width: 87%;
+                margin: 0 0 45px;
+            }
+            @include breakpoint(lg) 
+            {
+                width: 100% !important;
+            }
+            h3{
+                @include breakpoint(lg)
+                {
+                    font-size: 26px;
+                }
+                @include breakpoint(sm)
+                {
+                    font-size: 22px;
+                }
+                @include breakpoint(xs)
+                {
+                    font-size: 20px;
+                }
+                @include breakpoint(xs)
+                {
+                    text-align: center;
+                }
+            }
+        }
+        .landing-sec-2-inner{
+            padding-top: 136px;
+            padding-bottom: 109px;
+            @include breakpoint(xl) {
+                padding: 123px 0 86px;
+            }
+            @include breakpoint(sm) {
+                width: 100%;
+            }
+            @include breakpoint(xs)
+            {
+                padding: 60px 0 86px;
+            }
+        }
+        @include breakpoint(lg)
+        {
+            width: 100%;
+            padding-left: 0;
+        }
+        @include breakpoint(sm)
+        {
+            width: 100%;
+            padding-left: 0px;
+        }
+
+        .container{
+            &.container-1554{
+                @include breakpoint(sm)
+                {
+                    width: 480px;
+                }
+                @include breakpoint(sm)
+                {
+                    width: 350px;
+                }
+            }
+        }
+
+    }
+}
+.leadership-sec-2-list-block{
+    display: flex;
+    flex-wrap: wrap;
+    color: $white;
+    margin:0 0 40px ;
+    @include breakpoint(xl){
+        padding-left: 0;
+        margin: 0 0 26px;
+    }
+    @include breakpoint(xs)
+    {
+        margin: 0 0 35px;
+    }
+    .leadership-sec-2-list-img{
+        width: 70px;
+        text-align: center; 
+        @include breakpoint(xl){
+            width: 50px;
+        }
+        @include breakpoint(xs)
+        {
+            width: 100%;
+            text-align: center;
+        }
+        img{
+            @include breakpoint(lg)
+            {
+                max-height: 45px;
+            }    
+        }
+    }
+    .leadership-sec-2-list-caps{
+        width: calc(100% - 70px);
+        padding: 0 0 0 40px;
+        font-size: 20px;
+        line-height: 1.4em;
+        letter-spacing: 0.025em;
+        @include breakpoint(xl) {
+            width: 84%;
+        }
+        @include breakpoint(lg)
+        {
+            padding: 0 0 0 25px;
+        }
+        @include breakpoint(xs)
+        {
+            padding: 0;
+            width: 100%;
+            padding-top: 20px;
+            text-align: center;
+        }
+        h5{
+            font-size: 28px;
+            color: $dusty-gray;
+            margin: 0 0 12px;
+            letter-spacing: 0.055em;
+            @include breakpoint(xl) {
+                // font-size: 22px;
+                // margin: 0 0 8px; 
+            }
+            @include breakpoint(lg) {
+                // font-size: 24px;
+            }
+        }
+        p{
+            width: 95.5%;
+            font-family: $default;
+            font-size: 20px;
+            @include breakpoint(xl) {
+                font-size: 16px;
+                line-height: 1.45em;
+                width: 93%;
+            }
+            @include breakpoint(lg) {
+                font-size: 18px;
+            }
+            @include breakpoint(xs)
+            {
+                width: 100%;
+            }
+            &:last-child{
+                margin: 0;
+            }
+        }
+    }
+}
+body{
+    .landing-sec-3{
+        &.leadership-sec-3{
+            margin-top: -662px;
+            padding-bottom: 7px;
+            margin-bottom: 251px;
+            padding-top: 821px;
+            @include breakpoint(xl) {
+                margin-top: -530px;
+                padding-top: 657px;
+                margin-bottom: 203px;
+            }
+            @include breakpoint(md) {
+                padding-top: 627px;
+                margin-bottom: 115px;
+            }
+            @include breakpoint(sm) {
+                margin-top: 0px;
+                padding-top: 100px;
+                margin-bottom: 100px;
+            }
+        }
+    }
+}
+
+.leadership-sec-3-list-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -20px;
+    color: $white;
+    padding: 0 130px;
+    @include breakpoint(xl) {
+        padding: 0 136px 0 153px;
+    }
+    @include breakpoint(lg) {
+        padding: 0 10% 0 10%;
+    }
+    @include breakpoint(xs) {
+        padding: 0 5% 0 5%;
+    }
+    .col-3{
+        width: 33.33%;
+        padding: 0 20px;
+        @include breakpoint(lg) {
+            width: 50%;
+            padding: 0 15px;
+        }
+        @include breakpoint(sm)
+        {
+            width: 100%;
+        }
+    }
+    .leadership-sec-3-block{
+        text-align: center;
+        margin: 0 0 146px;
+        @include breakpoint(xl) {
+            margin: 0 0 116px; 
+        }
+        @include breakpoint(md) {
+            margin: 0 0 70px;
+        }
+        @include breakpoint(sm)
+        {
+            margin: 0 0 80px;
+        }
+        @include breakpoint(xs)
+        {
+            margin: 0 0 80px;
+        }
+    }
+}
+.leadership-sec-3-block-img{ 
+    margin: 0 0 32px; 
+    @include breakpoint(xl) {
+        margin: 0 0 25px; 
+    }
+    img{
+        @include breakpoint(xl) {
+            width: 87%;
+        }
+    }
+}
+.leadership-sec-3-block-caps{
+    h5{
+        text-transform: uppercase;
+        font-size: 32px;
+        font-family: $default;
+        margin: 0 0 2px;
+        line-height: normal;
+        display: block;
+        width: 100%;
+        letter-spacing: 0.05em;
+        @include breakpoint(xl) {
+            // font-size: 25px;
+        }
+    }
+    label{
+        font-size: 17px;
+        text-transform: uppercase;
+        line-height: normal;
+        display: block;
+        width: 100%;
+        letter-spacing: 0.05em;
+        @include breakpoint(xl) {
+            // font-size: 14px;
+        }
+        @include breakpoint(lg) {
+            // font-size: 16px;
+        }
+        @include breakpoint(sm) {
+            // font-size: 18px;
+            // margin-top: 5px;
+        }
+    }
+}

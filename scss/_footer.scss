@@ -1,0 +1,797 @@
+footer {
+    background: $black;
+    color: $white;
+    position: relative;
+    padding: 272px 0 154px;
+    z-index: 4;
+    @include breakpoint(xxxl) { 
+        padding: 224px 0 154px;
+    }
+    @include breakpoint(xxl) {}
+    @include breakpoint(xl) {
+        padding: 190px 0 154px;
+    }
+    @include breakpoint(lg) {
+        padding: 185px 0 194px;
+    }
+    @include breakpoint(md) {}
+    @include breakpoint(sm) {
+        padding: 116px 0 80px;
+    }
+    @include breakpoint(xs) {}
+    @include breakpoint(vs) {}
+    .footer-graphic { 
+        position: absolute;
+        bottom: 6%;
+        left: 11.9%;
+        @include breakpoint(xxxl) {
+            width: 449px;
+            bottom: 7.5%;
+        }
+        @include breakpoint(xxl) {
+            width: 376px;
+            bottom: 14%;
+        }
+        @include breakpoint(xl) {
+            width: 300px;
+            bottom: 16.7%;
+        }
+        @include breakpoint(lg) {
+            width: 376px;
+            bottom: 3.7%;
+            left: 5.2%;
+        }
+        @include breakpoint(sm) {
+            width: 283px;
+            left: 6.2%;
+        }
+    }
+    .footer-graphic-tr {
+        position: absolute;
+        right: 2.8%;
+        top: 6%;
+        width: 455px;
+        @include breakpoint(xxxl) {
+            top: 5.5%;
+            width: 388px;
+        }
+        @include breakpoint(xxl) {
+            top: 8.8%;
+            width: 325px;
+            right: 4.6%;
+        }
+        @include breakpoint(xl) {
+            top: 5.4%;
+            width: 258px;
+            right: 6.8%;
+        }
+        @include breakpoint(lg) {
+            top: 3.7%;
+            width: 324px;
+            right: 4.8%;
+        }
+        @include breakpoint(sm) {
+            top: 5.5%;
+            width: 244px;
+            right: 6.2%;
+        }
+    }
+    .great-certified {
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: -100px;
+        @include breakpoint(xxxl) {
+            width: 113px;
+            top: -87px;
+        }
+        @include breakpoint(xxl) {
+            width: 95px;
+            top: -69px;
+        }
+        @include breakpoint(xl) {
+            width: 75px;
+            top: -56px;
+        }
+        @include breakpoint(lg) {
+            width: 95px;
+            top: -81px;
+        }
+        @include breakpoint(md) {
+            width: 115px;
+            top: -97px;
+        }
+        @include breakpoint(sm) {
+            width: 95px;
+            top: -79px;
+        }
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+    }
+    .footer-inner-row {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 119px;
+        position: relative;
+        z-index: 1;
+        @include breakpoint(xxxl) {
+            margin: 0 0 94px;
+        }
+        @include breakpoint(xxl) {
+            margin: 0 0 67px;
+        }
+        @include breakpoint(xl) {
+            margin: 0 0 52px;
+        }
+        @include breakpoint(lg) {
+            margin: 0 0 48px;
+        }
+        @include breakpoint(md) {
+            margin: 0 0 19px;
+        }
+        @include breakpoint(sm) {
+            margin: 0 0 58px;
+            justify-content: center;
+        }
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+        .footer-lh {
+            @include breakpoint(sm) {
+                text-align: center;
+            }
+            position: relative;
+            .footer-logo {
+                margin: 0 0 49px;
+                @include breakpoint(xxxl) {
+                    width: 268px;
+                    margin: 0 0 45px;
+                }
+                @include breakpoint(xxl) {
+                    width: 225px;
+                    margin: 0 0 35px;
+                }
+                @include breakpoint(xl) {
+                    width: 180px;
+                    margin: 0 0 29px;
+                }
+                @include breakpoint(lg) {
+                    width: 226px;
+                    margin: 0 0 36px;
+                }
+                @include breakpoint(md) {}
+                @include breakpoint(sm) {
+                    width: 168px;
+                    margin: 0 auto 22px auto;
+                }
+                @include breakpoint(xs) {}
+                @include breakpoint(vs) {}
+            }
+            p {
+                letter-spacing: 1.2px;
+                font-size: 17px;
+                @include breakpoint(xxxl) {
+                    font-size: 17px;
+                    line-height: 31px;
+                    letter-spacing: 1px;
+                }
+                @include breakpoint(xxl) {
+                    // font-size: 15px;
+                    // line-height: 27px;
+                    letter-spacing: 0.8px;
+                }
+                @include breakpoint(xl) {
+                    // font-size: 12px;
+                    // line-height: 21px;
+                    // letter-spacing: 0.55px;
+                }
+                @include breakpoint(lg) {
+                    // font-size: 15px;
+                    // line-height: 26px;
+                    // letter-spacing: 0.8px;
+                }
+                @include breakpoint(md) {}
+                @include breakpoint(sm) {
+                    // font-size: 12px;
+                    // line-height: 16px;
+                    // letter-spacing: 0.6px;
+                }
+                @include breakpoint(xs) {}
+                @include breakpoint(vs) {}
+            }
+            >.btn {
+                position: absolute;
+                bottom: 0;
+                height: 64px;
+                padding: 0 20px;
+                line-height: 68px;
+                width: auto;
+                color: $orange;
+                background: #181818;
+                font-size: 16px;
+                letter-spacing: 2px;
+                display: inline-block;
+                &.request-btn{
+                    height: 45px;
+                    line-height: 50px;
+                    padding: 0px 15px;
+                    padding-right: 10px;
+                    min-width: 167px;
+                    font-size: 14px;
+                }
+                @include breakpoint(xxxl) {
+                    height: 53px;
+                    line-height: 58px;
+                    font-size: 15px;
+                    letter-spacing: 1px;
+                }
+                @include breakpoint(xxl) {
+                    height: 46px;
+                    line-height: 51px;
+                    font-size: 12px;
+                }
+                @include breakpoint(xl) {
+                    height: 38px;
+                    line-height: 43px;
+                    font-size: 11px;
+                    letter-spacing: 0.18px;
+                }
+                @include breakpoint(lg) {
+                    position: relative;
+                    margin: 114px 0 236px 0;
+                    height: 45px;
+                    font-size: 14px;
+                    line-height: 50px;
+                }
+                @include breakpoint(md) {
+                    margin: 114px 0 241px 0;
+                }
+                @include breakpoint(sm) {
+                    margin: 24px 0 0px 0;
+                    height: 48px;
+                    font-size: 14px;
+                    line-height: 53px;
+                }
+                &:hover {
+                    background: $orange;
+                    color: $white;
+                }
+                span {
+                    padding-top: 1px;
+                    @include breakpoint(xl) {
+                        padding-top: 0;
+                    }
+                    &::after {
+                        top: 4px;
+                        @include breakpoint(sm) {
+                            top: 2px;
+                        }
+                    }
+                }
+                &.request-btn span{
+                    line-height: 60px;
+                }
+            }
+            .footer-rh-social {
+                display: none;
+                 
+                @include breakpoint(md) {
+                    padding: 0;
+                }
+                @include breakpoint(sm) {
+                    display: none;
+                }
+            }
+        }
+        .footer-rh {
+            width: 61.2%;
+            @include breakpoint(xxxl) {
+                width: 61%;
+            }
+            @include breakpoint(xxl) {
+                width: 64.5%;
+            }
+            @include breakpoint(xl) {}
+            @include breakpoint(lg) {
+                width: 37.8%;
+            }
+            @include breakpoint(md) {
+                width: 42.5%;
+            }
+            @include breakpoint(sm) {
+                display: none;
+            }
+            @include breakpoint(xs) {}
+            @include breakpoint(vs) {}
+            p {
+                letter-spacing: 1.8px;
+            }
+        }
+        &.footer-copy {
+            @include breakpoint(lg) {
+                margin: 59px 0 0;
+            }
+            @include breakpoint(sm) {
+                margin: 26px 0 0;
+            }
+            .footer-rh {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                @include breakpoint(sm) {
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+                .created-by {
+                    @include breakpoint(xxxl) {
+                        width: 272px;
+                    }
+                    @include breakpoint(xxl) {
+                        width: 228px;
+                    }
+                    @include breakpoint(xl) {
+                        width: 182px;
+                    }
+                    @include breakpoint(lg) {
+                        width: 233px;
+                    }
+                    @include breakpoint(md) {
+                        width: 196px;
+                    }
+                    @include breakpoint(sm) {}
+                    @include breakpoint(xs) {}
+                    @include breakpoint(vs) {}
+                }
+            }
+            .footer-rh {
+                @include breakpoint(lg) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .footer-rh-top {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 0 151px;
+        justify-content: flex-start;
+        @include breakpoint(xxxl) {
+            padding: 0 0 129px;
+        }
+        @include breakpoint(xxl) {
+            padding: 0 0 94px;
+        }
+        @include breakpoint(xl) {
+            padding: 0 0 77px;
+        }
+        @include breakpoint(lg) {
+            padding: 0;
+        }
+        @include breakpoint(md) {}
+        @include breakpoint(sm) {}
+        @include breakpoint(xs) {}
+        @include breakpoint(vs) {}
+        .foot-menu-block {
+            padding: 23px 0 0;
+            width: 33.33%;
+            @include breakpoint(xxl) {
+                padding: 7px 0 0;
+            }
+            @include breakpoint(xl) {
+                padding: 5px 0 0;
+            }
+            @include breakpoint(lg) {
+                width: 100%;
+                padding: 11px 0 0;
+                margin: 0 0 33px;
+            }
+            ul {
+                padding: 0;
+                margin: 0;
+                li {
+                    padding: 0;
+                    margin: 0;
+                    text-transform: uppercase;
+                    color: $white;
+                    line-height: 35px;
+                    list-style: none;
+                    font-size: 25px;
+                    @include breakpoint(xxxl) {
+                        font-size: 21px;
+                        line-height: 29px;
+                    }
+                    @include breakpoint(xxl) {
+                        font-size: 20px;
+                        line-height: 28px;
+                    }
+                    @include breakpoint(xl) {
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+                    @include breakpoint(lg) {
+                        font-size: 20px;
+                        line-height: 28px;
+                    }
+                    @include breakpoint(md) {}
+                    @include breakpoint(sm) {}
+                    @include breakpoint(xs) {}
+                    @include breakpoint(vs) {}
+                    a {
+                        color: $dove-gray;
+                        &:hover {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-rh-subs-social {
+        display: flex;
+        justify-content: space-between;
+        @include breakpoint(lg) {
+            display: none;
+        }
+        .footer-rh-subs {
+            width: 50.5%;
+            @include breakpoint(xxxl) {
+                width: 51%;
+            }
+            @include breakpoint(xxl) {
+                width: 52%;
+            }
+            @include breakpoint(xl) {}
+            @include breakpoint(lg) {}
+            @include breakpoint(md) {}
+            @include breakpoint(sm) {}
+            @include breakpoint(xs) {}
+            @include breakpoint(vs) {}
+            .footer-rh-subs-tit {
+                padding: 0 0 26px;
+                @include breakpoint(xxxl) {
+                    padding-bottom: 21px;
+                }
+                @include breakpoint(xxl) {}
+                @include breakpoint(xl) {
+                    padding-bottom: 14px;
+                }
+                @include breakpoint(lg) {
+                    padding-bottom: 18px;
+                }
+                @include breakpoint(md) {
+                    padding-bottom: 20px;
+                }
+                @include breakpoint(sm) {
+                    padding-bottom: 22px;
+                }
+                @include breakpoint(xs) {}
+                @include breakpoint(vs) {}
+                h6 {
+                    font-size: 26px;
+                    text-transform: uppercase;
+                    font-family: $default-regular;
+                    margin: 0 0 5px;
+                    letter-spacing: 1px;
+                    @include breakpoint(xxxl) {
+                        font-size: 22px;
+                        letter-spacing: 0.5px;
+                    }
+                    @include breakpoint(xxl) {
+                        font-size: 20px;
+                        letter-spacing: 0.6px;
+                        margin: 0 0 3px;
+                    }
+                    @include breakpoint(xl) {
+                        font-size: 16px;
+                    }
+                    @include breakpoint(lg) {
+                        font-size: 20px;
+                    }
+                    @include breakpoint(md) {}
+                    @include breakpoint(sm) {
+                        font-size: 19px;
+                        margin: 0;
+                    }
+                    @include breakpoint(xs) {}
+                    @include breakpoint(vs) {}
+                }
+                p {
+                    font-size: 21px;
+                    margin: 0;
+                    line-height: 1.55em;
+                    letter-spacing: 1.2px;
+                    @include breakpoint(xxxl) {
+                        font-size: 18px;
+                        letter-spacing: 0.8px;
+                    }
+                    @include breakpoint(xxl) {
+                        font-size: 16px;
+                        letter-spacing: 0.85px;
+                    }
+                    @include breakpoint(xl) {
+                        font-size: 14px;
+                        letter-spacing: 0.12px;
+                    }
+                    @include breakpoint(lg) {
+                        font-size: 18px;
+                        letter-spacing: 0;
+                        line-height: 1.4em;
+                    }
+                    @include breakpoint(md) {}
+                    @include breakpoint(sm) {
+                        font-size: 15px;
+                        line-height: 1.1em;
+                        letter-spacing: 0.3px;
+                    }
+                    @include breakpoint(xs) {}
+                    @include breakpoint(vs) {}
+                }
+            }
+            .footer-rh-subs-form {
+                position: relative;
+                display: flex;
+                @include breakpoint(md) {
+                    margin: 0 -13px 0 0;
+                }
+                @include breakpoint(sm) {
+                    margin: 0;
+                }
+                .input-text {
+                    width: 100%;
+                    height: 59px;
+                    border: 0;
+                    background: $white;
+                    border-radius: 8px;
+                    color: $dusty-gray;
+                    font-size: 23px;
+                    letter-spacing: -0.4px;
+                    padding: 0 285px 0 24px;
+                    font-family: $helsinkibook;
+                    @include breakpoint(xxxl) {
+                        height: 49px;
+                        font-size: 20px;
+                        padding: 0 20px;
+                    }
+                    @include breakpoint(xxl) {
+                        height: 47px;
+                    }
+                    @include breakpoint(xl) {
+                        height: 36px;
+                        font-size: 16px;
+                        padding: 0 16px;
+                    }
+                    @include breakpoint(lg) {
+                        height: 48px;
+                        font-size: 20px;
+                        padding: 0 20px;
+                    }
+                    @include breakpoint(md) {
+                        height: 45px;
+                    }
+                    @include breakpoint(sm) {
+                        height: 42px;
+                        font-size: 18px;
+                        padding: 0 17px;
+                    }
+                    @include breakpoint(xs) {}
+                    @include breakpoint(vs) {}
+                }
+                .submit-btn {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 260px;
+                    border: 0;
+                    background: $orange;
+                    color: $white;
+                    height: 100%;
+                    border-radius: 0 8px 8px 0;
+                    text-transform: uppercase;
+                    font-size: 21px !important;
+                    letter-spacing: 0.5px;
+                    transition: all 0.5s;
+                    font-family: $helsinkibook !important;
+                    cursor: pointer;
+                    padding: 0;
+                    @include breakpoint(xxxl) {
+                        width: 219px;
+                    }
+                    @include breakpoint(xxl) {
+                        width: 196px;
+                        letter-spacing: 2.3px;
+                    }
+                    @include breakpoint(xl) {
+                        width: 157px;
+                        font-size: 14px !important;
+                    }
+                    @include breakpoint(lg) {
+                        width: 196px;
+                        font-size: 16px !important;
+                    }
+                    @include breakpoint(md) {
+                        width: 162px;
+                    }
+                    @include breakpoint(sm) {
+                        width: 130px;
+                        font-size: 14px !important;
+                    }
+                    @include breakpoint(xs) {}
+                    @include breakpoint(vs) {}
+                    &:hover {
+                        background: #d86e14;
+                    }
+                }
+            }
+        }
+        &.show-mobile {
+            display: none;
+            @include breakpoint(lg) {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            @include breakpoint(sm) {
+                flex-wrap: wrap;
+                flex-direction: column;
+                text-align: center;
+            }
+            .footer-rh-subs {
+                @include breakpoint(lg) {
+                    width: 100%;
+                }
+            }
+            .footer-rh-social {
+                
+                @include breakpoint(sm) {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    margin: 39px 0 0 -20px;
+                }
+                .copy-text{
+                    padding: 30px 0 0;
+                    width: 100%;
+                    @include breakpoint(sm) {
+                        padding: 0;
+                    }
+                }
+                ul{
+                    justify-content: start;
+                    padding: 30px 0 0;
+                    @include breakpoint(sm) {
+                        display: flex;
+                        padding: 0;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+    .footer-rh-social {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: center;
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            li {
+                padding: 10px 29px 2px;
+                border-right: 1px solid #2d2e2e;
+                margin: 0;
+                text-transform: uppercase;
+                list-style: none;
+                font-size: 23px;
+                display: flex;
+                @include breakpoint(xxxl) {
+                    font-size: 19px;
+                    padding: 10px 24px 0px;
+                }
+                @include breakpoint(xxl) {
+                    font-size: 17px;
+                    padding: 4px 19px 0px;
+                }
+                @include breakpoint(xl) {
+                    font-size: 15px;
+                    padding: 3px 14px 0;
+                    line-height: 34px;
+                }
+                @include breakpoint(lg) {
+                    font-size: 17px;
+                    padding: 4px 19px 0;
+                    line-height: 40px;
+                }
+                @include breakpoint(md) {
+                    padding: 4px 18px 0;
+                }
+                @include breakpoint(sm) {
+                    padding: 0 17px 0;
+                    font-size: 14px;
+                }
+                @include breakpoint(xs) {}
+                @include breakpoint(vs) {}
+                &:last-child {
+                    border-right: 0;
+                    padding-right: 0;
+                }
+                a {
+                    color: $white;
+                    &:hover {
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+} 
+
+
+.mac{
+    footer{
+        .footer-inner-row{
+            .footer-lh{
+                >.btn{
+                    .request_demo{
+                        height: 45px;
+                        line-height: 45px;
+                    }
+                    @include breakpoint(xxxl) {
+                        line-height: 45px;
+                    }
+                    @include breakpoint(xxl) {
+                        line-height: 46px;
+                    }
+                    @include breakpoint(xl) {
+                        line-height: 38px;
+                        letter-spacing: 0.18px;
+                    }
+                    @include breakpoint(lg) {
+                        line-height: 45px;
+                    }
+                    @include breakpoint(sm) {
+                        line-height: 48px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.copy-text {
+    margin: 0;
+    font-size: 20px;
+    color: #454545;
+    letter-spacing: 0!important;
+    line-height: normal;
+    padding: 15px 0;
+    @include breakpoint(xxxl) {
+        font-size: 18px;
+    }
+    @include breakpoint(xxl) {
+        font-size: 16px;
+    }
+    @include breakpoint(xl) {
+        font-size: 14px;
+        padding: 11px 0;
+    }
+    @include breakpoint(lg) {
+        font-size: 17px;
+    }
+    @include breakpoint(md) {}
+    @include breakpoint(sm) {
+        font-size: 14px;
+        order: 1;
+        margin: 36px 0 0;
+    }
+    @include breakpoint(xs) {}
+    @include breakpoint(vs) {}
+}
+.mac footer .footer-inner-row .footer-lh > .btn{
+    @include breakpoint(xl) {
+        line-height: 3.3em;
+    }
+}

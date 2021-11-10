@@ -1,0 +1,839 @@
+.orchid-theme-bg{
+    background: $dark-orchid;
+}
+
+.contact-page{
+    .career-landing-sec-1{
+        padding: 92px 0 172px 0;
+        @include breakpoint(xl) {
+            padding: 60px 0 135px 0;
+        }
+        @include breakpoint(lg) {
+            padding: 100px 0 100px;
+        }
+        @include breakpoint(sm) {
+            padding: 75px 0 60px 0;
+        }
+    }
+}
+
+.career-landing-sec-2{
+    .landing-sec-2-inner{
+        padding: 144px 0 110px 0;
+        @include breakpoint(xl){
+            padding: 123px 0 92px 0;
+        }
+        @include breakpoint(md){
+            padding: 80px 0 60px; 
+            margin-left: 10%;
+        }
+        @include breakpoint(sm)
+        {
+            margin-left: 0%;
+        }
+        .landing-sec-2-tit-caps{
+            margin-bottom: 93px;
+            @include breakpoint(xl)
+            {
+                margin-bottom: 61px;    
+            }
+            @include breakpoint(sm)
+            {
+                margin-bottom: 40px;    
+            }
+            h3{
+                @include breakpoint(md)
+                {
+                    font-size: 22px;
+                }
+                @include breakpoint(sm)
+                {
+                    font-size: 18px;
+                }
+            }
+        }
+        .landing-sec-choosy-hiring{
+            width: 100%;
+            padding-left: 75px;
+            @include breakpoint(xl)
+            {
+                padding-left: 64px;
+            }
+            @include breakpoint(lg)
+            {
+                padding-left: 0;
+            }
+            ul{
+                padding: 0px;
+                margin: 0px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                li{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    width: 50%;
+                    padding: 0px 15px;
+                    padding-bottom: 37px;
+                    @include breakpoint(xl)
+                    {
+                        padding-bottom: 26px;
+                        width: 43.5%;
+                    }
+                    @include breakpoint(lg)
+                    {
+                        width: 50%;
+                    }
+                    @include breakpoint(md)
+                    {
+                        width: 100%;
+                    }
+                    @include breakpoint(sm)
+                    {
+                        padding: 0px;
+                        padding-bottom: 26px;
+                    }
+                    span{
+                        width: 55px;
+                        display: inline-block;
+                        @include breakpoint(xl)
+                        {
+                            width: 46px;
+                        }
+                        img{
+                            width: 34px;
+                            vertical-align: -4px;
+                            @include breakpoint(xl)
+                            {
+                                width: 28px;
+                            }
+                        }
+                    }
+                    p{
+                        margin: 0px;
+                        color: $dusty-gray;
+                        font-size: 17px;
+                        @include breakpoint(xl)
+                        {
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contact-page{
+    .career-landing-sec-3{
+        padding: 670px 0 162px 0;
+        margin-top: -510px;
+        @include breakpoint(xl)
+        {
+            padding: 639px 0 127px 0;
+        }
+        @include breakpoint(sm)
+        {
+            padding: 100px 0;
+            margin-top: 0px;
+        }
+        .career-content{
+            width: 100%;
+            padding: 160px 0px 129px 0px;
+            @include breakpoint(xl)
+            {
+                padding: 128px 0px 98px 0px;
+            }
+            @include breakpoint(lg)
+            {
+                padding: 80px 0px;
+            }
+            @include breakpoint(md)
+            {
+                padding: 40px 0px;
+            }
+            @include breakpoint(sm)
+            {
+                text-align: left;
+            }
+            h4{
+                color: $white;
+                margin-bottom: 18px;
+                @include breakpoint(xl){
+                    font-size: 25px;
+                    letter-spacing: 0.03em;
+                }
+            }
+            p{
+                color: $white;
+                font-size: 24px;
+                line-height: 1.4;
+                @include breakpoint(xl){
+                    font-size: 19px;    
+                    max-width: 900px;
+                    width: 100%;
+                    letter-spacing: 0.03em;
+                }
+            }
+        }
+        .contact-lr-blocks{
+            .contact-lr{
+                .contact-lr-img{
+                    @include breakpoint(lg){
+                        width: 150px;
+                    }
+                }
+                .contact-lr-desc{
+                    width: calc(100% - 450px);
+                    padding-left: 46px;
+                    @include breakpoint(lg){
+                        width: calc(100% - 150px);
+                        padding-left: 35px;
+                        
+                    }
+                    @include breakpoint(md){
+                        width: calc(100% - 150px);
+                        padding-left: 35px;
+                        padding-top: 0px;
+                    }
+                    @include breakpoint(sm)
+                    {   
+                        width: calc(100% - 0px);
+                        padding-left: 0px;
+                    }
+                    h4{
+                        font-size: 32px;
+                        font-family: $default;
+                    }
+                    p{
+                        font-size: 20px;
+                        &:last-child{
+                            margin-bottom: 0px;
+                            @include breakpoint(xl){
+                                max-width: 440px;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .career-bottom-btn{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            padding-top: 150px;
+            justify-content: center;
+            @include breakpoint(xl)
+            {
+                padding-top: 123px;    
+            }
+            @include breakpoint(sm)
+            {
+                padding-top: 70px;    
+            }
+            .btn{
+                height: 70px;
+                width: auto;
+                line-height: 76px;
+                font-size: 20px;
+                padding: 0px 70px;
+                @include breakpoint(xl){
+                    height: 56px;
+                    width: auto;
+                    padding: 0px 30px;
+                    line-height: 62px;
+                    font-size: 17px;
+                }
+                span{
+                    &:after{
+                        top: 4%;
+                        @include breakpoint(xl){
+                            top: 6%;
+                        }
+                    }
+                }
+                &:hover{
+                    background: $white;
+                    color: $dark-orchid !important;
+                    span{
+                        &:after{
+                            background-image: url(../images/btn-arrow-orchid.svg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mac{
+    .career-landing-sec-3{
+        .career-bottom-btn{
+            .btn{
+                line-height: 71px;
+                @include breakpoint(xl){
+                    line-height: 57px;
+                }
+            }
+        }
+    }    
+}
+
+.career-landing-sec-4{
+    padding: 245px 0 125px;
+    @include breakpoint(xl){
+        padding: 200px 0 90px;
+    }
+    @include breakpoint(lg){
+        padding: 100px 0 80px;
+    }
+    .career-content-4{
+        h4{
+            color: $dark-orchid;
+            span{
+                font-family: $courier;     
+                display: inline-block;
+            }
+            @include breakpoint(xl){
+                font-size: 26px;
+            }
+            @include breakpoint(sm){
+                font-size: 22px;
+            }
+        }
+        p{
+            font-size: 17px;
+            line-height: 1.9;
+            color: $default;
+            @include breakpoint(xl){
+                font-size: 17px;
+                line-height: 1.9;
+            }
+        }
+    }
+}
+
+.career-teamwork{
+    width: 100%;
+    padding-left: 80px; 
+    position: relative;
+    z-index: 9;
+    @include breakpoint(xl){ 
+        padding-left: 0;
+    }
+     
+    .marquee{
+        .slick-list{
+            padding: 0 !important;
+        } 
+        .slick-track{ 
+            .slick-slide{  
+                padding-right: 10px;
+                outline: none;
+                @include breakpoint(md){
+                    padding-right: 5px;
+                }
+                @include breakpoint(vs){
+                    padding-right: 3px;
+                }
+                .inner{
+                    img{
+                        @include breakpoint(xl){
+                            max-height: 700px;
+                        }
+                        @include breakpoint(lg){
+                            max-height: 550px;
+                        }
+                        @include breakpoint(md){
+                            max-height: 400px; 
+                        }
+                        @include breakpoint(vs){
+                            max-height: 250px; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+.career-landing-sec-5{
+    width: 100%;
+    padding: 160px 0 200px;
+    position: relative;
+    @include breakpoint(xl){
+        padding: 135px 0 200px;
+    }
+    @include breakpoint(md){
+        padding: 100px 0;
+    }
+    @include breakpoint(sm){
+        padding: 50px 0;
+    }
+    .polygon-a {
+        position: absolute;
+        z-index: -1;
+        &.polygon-a-1 {
+            left: 7.5%;
+            top: 18.5%;
+            width: 6.5%;
+            @include breakpoint(lg) {
+                display: none;
+            }
+        }
+        &.polygon-a-2 {
+            left: 11%;
+            top: 23%;
+            width: 12.1%;
+            @include breakpoint(sm) {
+                left: 1.5%;
+                top: 31.5%;
+                width: 41.1%;
+            }
+        }
+        &.polygon-a-3 {
+            left: 19.5%;
+            top: 33%;
+            width: 8.45%;
+            @include breakpoint(sm) {
+                left: 31%;
+                top: 7%;
+                width: 18.45%;
+            }
+        }
+        &.polygon-a-4 {
+            left: 16.8%;
+            top: 37%;
+            width: 2.7%;
+        }
+        &.polygon-a-5 {
+            left: 5.5%;
+            top: 42.5%;
+            width: 2%;
+        }
+        &.polygon-a-6 {
+            left: 0%;
+            top: 44%;
+            width: 6.5%;
+        }
+        &.polygon-a-7 {
+            left: 12.5%;
+            top: 52%;
+            width: 4.4%;
+        }
+        &.polygon-a-8 {
+            left: 10%;
+            top: 55%;
+            width: 2.7%;
+        }
+        &.polygon-a-9 {
+            left: 12.5%;
+            top: 61%;
+            width: 5.5%;
+        }
+    }
+
+    .career-testimonial{
+        width: 100%;
+        .career-t-block{
+            width: 82%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: auto;
+            @include breakpoint(sm){
+                justify-content: center;
+            }
+            .career-t-img{
+                width: 250px;
+                @include breakpoint(xl)
+                {
+                    width: 200px;
+                }
+                @include breakpoint(md)
+                {
+                    width: 150px;
+                    margin: 0 0 20px;
+                }
+                @include breakpoint(sm){
+                    text-align: center;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            .career-t-desc{
+                width: calc(100% - 250px);
+                padding-left: 50px;
+                @include breakpoint(xl)
+                {
+                    width: calc(100% - 200px);
+                    padding-left: 45px;
+                }
+                @include breakpoint(md)
+                {
+                    width: calc(100% - 150px);
+                    padding-left: 25px;
+                }
+                @include breakpoint(sm)
+                {
+                    width: calc(100% - 0px);
+                    padding-left: 0px;
+                    text-align: center;
+                }
+                p{
+                    font-size: 17px;
+                    line-height: 1.35;
+                    @include breakpoint(xl)
+                    {
+                        font-size: 17px;
+                    }
+                    @include breakpoint(md)
+                    {
+                        font-size: 16px;
+                    }
+                }
+                h6{
+                    color: $nobel-new;
+                    font-size: 20px;
+                    line-height: 1.3;
+                    margin: 0;
+                    span{
+                        color: $dark-orchid;
+                    }
+                    @include breakpoint(xl){
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .slick-arrow{
+            position: absolute;
+            top: 42%;
+            transform: unset;
+            border: 0;
+            padding: 0;
+            background-color: transparent;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 79px;
+            height: 70px;
+            margin-top: -35px;
+            transition: all .5s;
+            img{
+                opacity: 0;
+                visibility: hidden;
+                width: 0;
+                height: 0;
+            }
+            @include breakpoint(xl){
+                width: 61px;
+                top: 35%;
+            }
+            @include breakpoint(md){
+                width: 40px;
+                top: 35%;
+            }
+            &:hover{
+                transform: scale(1.06);
+            }
+        }
+        .slick-dots {
+            width: 100%; 
+            text-align: center;
+            padding-top: 33px;
+            @include breakpoint(md){
+                padding-top: 10px;
+            }
+            li {
+                background-color: $Whisper;
+                width: 13px;
+                height: 13px;
+                border-radius: 100%;
+                display: inline-block;
+                margin: 0px 3px;
+                border: 0;
+                cursor: pointer;
+                padding-bottom: 0;
+                padding-left: 0;
+                &.slick-active{
+                    background-color: $dark-orchid;
+                }
+                button {
+                    display: none;
+                }
+            }
+        }
+        .slick-prev{
+            left: -7%;
+            background-image: url('../images/test-prev-arrow.png');
+            &:hover{
+                background-image: url('../images/test-prev-arrow-white.png');
+            }
+            @include breakpoint(lgm){
+                left: 0;
+            }
+            @include breakpoint(lg){
+                left: -7%;
+            }
+            @include breakpoint(md){
+                left: 0%;
+            }
+        }
+        .slick-next{
+            right: -13%;
+            background-image: url('../images/test-next-arrow.png');
+            &:hover{
+                background-image: url('../images/test-next-arrow-white.png');
+            }
+            @include breakpoint(lgm){
+                right: 0;
+            }
+            @include breakpoint(lg){
+                right: -13%;
+            }
+            @include breakpoint(md){
+                right: 0%;
+            }
+        }
+    }
+    .career-position-block{
+        width: 100%;
+        padding-top: 136px;
+        @include breakpoint(xl)
+        {
+            padding-top: 96px;
+        }
+        @include breakpoint(sm)
+        {
+            padding-top: 50px;
+        }
+        .career-content{
+            width: 100%;
+            text-align: center;
+            padding-bottom: 50px;
+            @include breakpoint(xl)
+            {
+                padding-bottom: 38px;    
+            }
+            h4{
+                font-size: 32px;
+                color: $dark-orchid;
+                width: 100%;
+                margin-bottom: 22px;
+                letter-spacing: 2px;
+                font-family: $default;
+                @include breakpoint(xl)
+                {
+                    font-size: 24px;
+                }
+            }
+            p{
+                font-size: 17px;
+                color: $black;
+                line-height: 1.3;
+                margin: auto;
+                margin-bottom: 20px;
+                width: 82%;
+                @include breakpoint(xl)
+                {
+                    font-size: 17px;
+                    // line-height: 1.4;
+                    width: 84%;
+                }
+            }
+        }
+        .career-pos-block{
+            width: 100%;
+            padding: 2.30em 6.5em;
+            background-color: $lighting_gray;
+            border-top: 1px solid $light_gray;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include breakpoint(xl)
+            {
+                padding: 1.62em 5.2em;
+            }
+            @include breakpoint(lg)
+            {
+                padding: 1em 2.2em;
+            }
+            @include breakpoint(md)
+            {
+                padding: 1em;
+            }
+            @include breakpoint(sm)
+            {
+                flex-wrap: wrap;
+            }
+            h6{
+                color: $black;
+                margin: 0px;
+                width: 73%;
+                @include breakpoint(xl) {
+                    font-size: 18px;
+                }
+                @include breakpoint(lg) {
+                    width: 60%;
+                }
+                @include breakpoint(sm)
+                {
+                    width: 100%;
+                    margin: 0 0 10px;
+                }
+            }
+            .btn{
+                margin: 0px;
+                padding: 0.15em 37px 0;
+                @include breakpoint(xl)
+                {
+                    min-width: 175px;
+                    font-size: 16px;
+                    height: 50px;
+                    line-height: 50px;
+                }
+                span{
+                    &:after{
+                        background-image: url('../images/btn-angle-right.png');
+                        width: 21px;
+                        height: 15px;
+                        background-size: contain;
+                        top: 0.5px;
+                        @include breakpoint(xl)
+                        {
+                            margin: 0 0 0 0.5em;
+                        }
+                    }
+                }
+            }
+            &:nth-child(odd){
+                background-color: $white;
+            }
+            &:hover{
+                h6{
+                    color: $dark-orchid;
+                }
+            }
+        }
+    }
+    .career-bottom-text{
+        width: 100%;
+        text-align: center;
+        padding-top: 64px;
+        @include breakpoint(xl)
+        {
+            padding-top: 56px;
+        }
+        p{
+            margin: auto;
+            margin-bottom: 20px;
+            width: 46%;
+            font-size: 17px;
+            @include breakpoint(md)
+            {
+                width: 100%;
+            }
+            a{
+                color: $dark-orchid;
+            }
+        }
+    }
+}
+
+
+.orchid-theme .label:before {
+    background-color: $dark-orchid;
+}
+.career-video {
+    position: relative;
+    overflow: hidden;
+    @include breakpoint(xl){
+        width: 92.7%;
+    }
+    @include breakpoint(sm){
+        width: 100%;
+    }
+    .video-play-ico {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 171px;
+        width: 171px;
+        margin: auto;
+        @include breakpoint(xxxl) {
+            height: 145px;
+            width: 145px;
+        }        
+        @include breakpoint(xl) {
+            height: 115px;
+            width: 115px;
+        }        
+        @include breakpoint(sm) {
+            height: 62px;
+            width: 62px;
+        }                
+        &:before{
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-left: 30px solid #3d4146;
+            border-top: 17px solid transparent;
+            border-bottom: 17px solid transparent;
+            height: 0;
+            width: 0;
+            z-index: 2;
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+            @include breakpoint(sm) {
+                border-left: 11px solid #3d4146;
+                border-top: 7px solid transparent;
+                border-bottom: 7px solid transparent;
+            }
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: #ffffff;
+            -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 50%;
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+            z-index: 1;
+        }
+        &:hover{
+            &:before{
+                transform: scale(0.9);
+            }
+            &:after{
+                transform: scale(1.2);
+            }
+            + img{
+                transform: scale(1);
+            }
+        }
+    }
+   > img{
+        width: 100%;
+        transition: all 0.5s;
+        transform: scale(1.05);
+    }
+}

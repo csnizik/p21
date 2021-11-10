@@ -1,0 +1,432 @@
+.login-reg-block{
+    width: auto;
+    padding: 10px 34px 5px;
+    border-radius: 5px;
+    background-color: $white-smoke;
+    display: inline-block;
+    @include breakpoint(lg){
+        width: 100%;
+        text-align: center;
+    }
+    p{
+        font-size: 17px;
+        margin: 0;
+    }
+}
+
+.roboto-font{
+    .login-reg-block{
+        padding: 8px 34px 8px;
+    }
+}
+
+.mac{
+    .login-reg-block{
+        padding: 8px 34px 8px;
+    }
+}
+
+.new-innerpage-title{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    h1{
+        width: auto;
+        display: inline-block;
+    }
+    ul{
+        margin: 0;
+        width: auto;
+        display: inline-block;
+        padding-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        @include breakpoint(lg){
+            padding: 0;
+            text-align: center;
+            width: 100%;
+            justify-content: center;
+        }
+        li{
+            display: inline-block;
+            padding: 0px 16px;
+            border-left: 1px solid $light_gray_4;
+            @include breakpoint(lg){
+                padding: 0 10px;
+            }
+            @include breakpoint(sm){
+                width: 100%;
+                border: 0;
+            }
+            &.active{
+                a{
+                    color: $black;
+                }
+            }
+            &:first-child{
+                border-left: 0px;
+            }
+            &:before{
+                display: none;
+            }
+            a{
+                color: $orange;
+                font-size: 16px;
+                font-weight: 300;
+                @include breakpoint(lg){
+                    font-size: 14px;
+                    
+                }
+            }
+        }
+    }
+}
+
+.community-forum{
+    .search-block{
+        padding-bottom: 0px;
+        @include breakpoint(lg){
+            margin-top: 15px !important;
+        }
+    }
+    .new-innerpage-title{
+        h1{
+            letter-spacing: 0.026em;
+        }
+    } 
+    .search-block{
+        max-width: 446px;
+        float: right;
+        margin-top: 0px;
+        margin-bottom: 0;
+    }
+    .community-forun-table{
+        width: 100%;
+        padding-top: 25px;
+        table{
+            width: 100%;
+            text-align: left;
+            margin: 0;
+            @include breakpoint(lg){
+                width: 1280px;
+            }
+            .scroll-table{
+                width: 100%;
+                overflow: auto;
+            }
+            tr{
+                th{
+                    text-align: left;
+                    padding: 4px 20px;
+                    background-color: $grey;
+                    font-weight: 400; 
+                    font-size: 17px;
+                    &.th-general{
+                        text-transform: uppercase;
+                    }
+                }
+                td{
+                    text-align: left;
+                    padding: 18px 20px;
+                    color: $Zambezi;
+                    font-weight: 400;
+                    border-bottom: 1px solid $light_gray;
+                    background-color: $white;
+                    font-size: 17px;
+                    p{
+                        margin: 0px;
+                        span{
+                            color: $aqua;
+                            font-weight: 500;
+                        }
+                    }
+                    &.td-last-post{
+                        span{
+                            vertical-align: middle;
+                            display: inline-block;
+                            &.last-pot-img{
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 100%;
+                                overflow: hidden;
+                                margin-right: 10px;
+                                line-height: 40px;
+                                text-align: center;
+                                font-weight: 400;
+                                font-size: 18px;
+                                color: $white;
+                            }
+                        }
+                    }
+                    .gravatar_username_item{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 20px;
+                        margin-right: 10px;
+                    }
+                }
+                &:nth-child(odd) td{
+                    background-color: $lighting_gray;
+                }
+                &:hover{
+                    background-color: $cultured_pearl;
+                    td{
+                        background-color: $cultured_pearl;    
+                    }
+                }
+            }
+        }
+    }
+    .page-nav{
+        width: 100%;
+        margin-top: 80px;   
+    }
+    .col-7{
+        @include breakpoint(lg){
+            width: 100%;
+            order: 0;
+        }
+    }
+    .col-4{
+        @include breakpoint(lg){
+            width: 100%;
+            text-align: center;
+            order: 0;
+        }
+        .search-block{
+            @include breakpoint(lg){
+                float: none;
+                display: inline-block;
+                margin-top: 20px;
+            }
+        }
+    }
+    .col-7{
+        @include breakpoint(lg){
+            padding-top: 0;
+        }
+    }
+}
+
+.last-post-tag{
+    font-size: 10px;
+    background-color: $orange;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 2px 8px;
+    line-height: normal;
+}
+.greeen{
+    background-color: $green;
+}
+.purple{
+    background-color: $purple;
+}
+.blue{
+    background-color: $blue;
+}
+.orange{
+    background-color: $orange;
+}
+
+.client-expiration-block{
+    width: 100%;
+    padding-top: 22px;
+    .client-comment-block{
+        width: 100%;
+        padding: 30px;
+        background-color: $cultured_pearl;
+        position: relative;
+        @include breakpoint(md){
+            padding: 20px;
+        }
+        &.even{
+            background-color: #fbfbfb;
+        }
+        p{
+            &:last-child{
+                margin-bottom: 0;
+            }
+            @include breakpoint(md){
+                margin-bottom: 15px;
+            }
+        }
+        .user-comment-time{
+            width: auto;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            right: 40px;
+            top: 25px;
+            @include breakpoint(md){
+                position: static;
+                width: 100%;
+                margin: 0 0 15px;
+            }
+            .user-img{
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+                overflow: hidden;
+                margin-right: 10px;
+                text-align: center;
+                line-height: 40px;
+                color: $white;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .last-post-tag{
+                margin-left: 10px;
+            }
+            p{
+                margin: 0;
+                color: $Zambezi;
+                font-size: 16px;
+                @include breakpoint(lg){
+                    font-size: 14px;
+                }
+            }
+        }
+        p{
+            color: $Zambezi;
+            span{
+                color: $aqua;
+            }
+        }
+        .login-reg-bottom{
+            width: 100%;
+            text-align: right;
+            p{
+                margin: 0px;
+            }
+        }
+    }
+    .forum-topics{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 19px 0px;
+        padding: 8px 0 4px 0;
+        border-top: 1px solid $white-smoke;
+        border-bottom: 1px solid $white-smoke;
+        @include breakpoint(md){
+            flex-wrap: wrap;
+        }
+        p{
+            font-size: 16px;
+            margin: 0px;
+            span{
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.flex-breadcrumb-two-block{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    @include breakpoint(md){
+        flex-wrap: wrap;
+    }
+    .flex-joint-btn{
+        @include breakpoint(md){
+            padding-top: 15px;
+        }
+    }
+    .login-reg-block{
+        @include breakpoint(lg){
+            width: auto;
+            padding: 11px 18px 11px;
+        }
+        @include breakpoint(md){
+            margin-top: 25px;
+        }
+    }
+    .tabs{
+        padding: 0px;
+        width: auto;
+        justify-content: flex-start;
+        @include breakpoint(md)
+        {
+            width: 100%;
+            justify-content: flex-start;
+        }
+        li{
+            border: 0px;
+            position: relative;
+            padding: 0px 14px;
+            @include breakpoint(sm){
+                width: auto;
+            }
+            &::after{
+                content: '/';
+                color: #b2b2b2;
+                font-size: 14px;
+                position: relative;
+                right: -14px;
+            }
+            &:first-child{
+                padding-left: 0px;
+            }
+            &:last-child{
+                padding-right: 0px;
+                &::after{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.community-formtitle-search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 35px;
+    @include breakpoint(md){
+        flex-wrap: wrap;
+    }
+    h1{
+        font-weight: 300;
+        margin: 0px;
+        padding-right: 40px;
+        letter-spacing: 0.031em;
+        @include breakpoint(md)
+        {
+            width: 100%;
+            padding-right: 0px;
+        }
+    }
+    .search-block{
+        @include breakpoint(md){
+            margin-top: 25px;
+        }
+    }
+
+}
+
+.flex-joint-btn{
+    display: flex;
+    width: auto;
+    .btn{
+        border-radius: 5px;
+        font-size: 17px;
+        &:first-child{
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+        &:last-child{
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+        &:hover{
+            transform: scale(1);
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,377 @@
+.community-form-main{
+    margin-top: 104px;
+    @media only screen and (max-width: 1599px) {
+        padding-left: 80px;
+        padding-right: 60px;    
+    }
+    @include breakpoint(sm) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .community-form-inner{
+        padding: 70px 0 80px;
+    }
+    .tabNav{
+        padding: 0;
+        ul{
+            &.tabs{
+                li{
+                    &.tab-link{
+                        /*font-family: $robotofont;
+                        font-weight: 300;*/
+                        text-transform: none;
+                    }
+                }
+            }
+        }
+
+    }
+    .tabs-dropdown{
+        .select-tab{
+            a{
+                font-family: $robotofont;
+                font-size: 14px;
+            }
+        }
+        .tabs-options{
+            position:relative;
+            ul{
+                background-color:#fff;
+                list-style:none; 
+                padding:0px 0px; 
+                position:absolute; 
+                left:0px; 
+                top:100%;
+                width:auto; 
+                min-width:100%;
+                border:1px solid #d7d7d7;
+                border-top: 0px;
+                display: none;
+                list-style: none;
+                z-index: 99;
+                li{
+                    list-style: none;
+                    width: 100%;
+                    display: inline-block;
+                    font-family: $robotofont;
+                    font-size: 14px;
+                    padding: 0;
+                    &:last-child{
+                        a{
+                            border-bottom: 0;
+                        }
+                    }
+                    &:before{
+                        display:none;
+                    }
+                }
+                a{
+                    padding: 10px;
+                    border-bottom: 1px solid #e7e7e7;
+                    display:block;
+                    text-decoration:none;
+                    color: #04b5c0;
+                    &:hover{
+                        background:#04b5c0;
+                        border-bottom: 1px solid #04b5c0;
+                        color:#fff;
+                        transition:0.2s ease;
+                    }
+                }
+            }
+        }
+    }
+    .tabContent-m{
+        margin-top: 56px;
+        overflow: visible;
+        @include breakpoint(lg) {
+            margin-top: 40px;
+        }
+    }
+    .community-form-title{
+        position: absolute;
+        top: -212px;
+        @include breakpoint(sm) {
+            top: -176px;
+        }
+        h1{
+            font-size: 40px;
+            font-family: $robotofont;
+            font-weight: 100;
+            letter-spacing: 0.25px;
+            margin: 0;
+            @include breakpoint(xl) {
+                font-size: 38px;
+            }
+            @include breakpoint(lg) {
+                font-size: 36px;
+            }
+            @include breakpoint(md) {
+                font-size: 34px;
+            }
+            @include breakpoint(sm) {
+                font-size: 32px;
+            }
+            @include breakpoint(xs) {
+                font-size: 30px;
+            }
+            @include breakpoint(vs) {
+                font-size: 28px;
+            }
+        }
+    }
+    .form-note{
+        font-size: 18px;
+        margin: 0 0 12px;
+        line-height: 1.3em;
+        @include breakpoint(sm) {
+            font-size: 16px;
+        }
+    }
+    form{
+        .form-row{
+            display: flex;
+            align-items: center;
+            padding: 0 23px;
+            border: 1px solid #e7e7e7;
+            border-radius: 6px;
+            margin: 0 0 19px;
+            flex-wrap: wrap;
+            @include breakpoint(lg) {
+                padding: 0 15px;
+            }
+            label{
+                width: 34px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include breakpoint(md) {
+                    width: 25px;
+                }
+            }
+            .pic-req{
+                line-height: 1.3em;
+            }
+            .form-input-container{
+                width: calc(100% - 34px);
+                position: relative;
+                @include breakpoint(md) {
+                    width: calc(100% - 25px);
+                }
+                input,select{
+                    border: 0;
+                    height: 66px;
+                    padding: 0 0 0 20px;
+                    font-size: 17px;
+                    letter-spacing: 0.5px;
+                    color: #5f5f5f;
+                    font-family: $robotofont;
+                    @include breakpoint(lg) {
+                        height: 55px;
+                        padding: 0 0 0 15px;
+                    }
+                    @include breakpoint(md) {
+                        height: 48px;
+                    }
+                    &::placeholder{
+                        opacity: 1;
+                        color: #5f5f5f;
+                    }
+                }
+                input[type="file"]{
+                    padding-top: 21px;
+                    @include breakpoint(lg) {
+                        padding-top: 14px;
+                    }
+                    @include breakpoint(md) {
+                        padding-top: 11px;
+                    }
+                }
+                .toggle-password{
+                    position: absolute;
+                    right: 8px;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    height: 13px;
+                    width: 22px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .pic-req{
+            line-height: 1.3em;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            color: #8f8f8f;
+            margin: 0 0 36px;
+            a{
+                color: #04b5c0;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        .password-strength{
+            margin: 0 0 -2px;
+            p{
+                line-height: 1.3em;
+                margin: 0 0 8px;
+                font-family: $robotofont;
+                font-weight: 300;
+                font-size: 15px;
+                color: #000000;
+            }
+            .pass-strength-bar{
+                height: 12px;
+                background-color: #ececec;
+                display: inline-block;
+                width: 100%;
+                position: relative; 
+                vertical-align: top;
+                float: left;
+                margin: 0 0 8px;
+            }
+            label{
+                font-family: $robotofont;
+                font-weight: 300;
+                font-size: 18px;
+                display: inline-block;
+                vertical-align: top;
+                line-height: 1.3em;
+                color: #000000;
+                @include breakpoint(lg) {
+                    font-size: 16px;
+                }
+                
+            }
+        }
+        .form-footer{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            input[type="submit"]{
+                height: 67px;
+                border: 0;
+                background: #f5861f url(../images/submit-arrow.png) no-repeat right 60px center;
+                padding: 5px 78px 0 60px;
+                border-radius: 6px;
+                min-width: 220px;
+                font-family: $robotofont;
+                margin-right: 50px;
+                @include breakpoint(lg) {
+                    height: 55px;
+                    min-width: 200px;
+                    margin-right: 30px;
+                }
+                @include breakpoint(md) {
+                    height: 48px;
+                    min-width: 150px;
+                    padding: 5px 50px 0 30px;
+                    background-position: right 35px center;
+                    font-size: 17px!important;
+                }
+                &:hover{
+                    background-color: #d86e14;
+                }
+            }
+            label{
+                font-size: 17px;
+                font-family: $robotofont;
+                color: #5f5f5f;
+                letter-spacing: 0.5px;
+                span{
+                    color: #f5861f;
+                }
+            }
+        }
+    } 
+}
+
+.login-edit-page{
+    .user-form{
+        .form-item{
+            input{
+                font-family: $robotofont;
+                font-size: 16px;
+                padding: 10px 15px;
+            }
+        }
+        .form-item{
+            select{
+                font-family: $robotofont;
+                font-size: 16px;
+                padding: 10px 15px;
+            }
+        }
+        .avatar_preview_radio{
+            .form-item{
+                margin-bottom: 20px;
+                input[type=radio]{
+                    +label{
+                        padding-left: 10px;
+                        &:before{
+                            position: relative;
+                            left: -10px;
+                        }
+                    }
+                }
+            }
+        }
+        input#edit-submit{
+            padding: 0 70px;
+            min-width: auto;
+            font-family: $robotofont !important;
+            background-position: 73% 50%;
+        }
+        #ajax-wrapper{
+            .form-item{
+                .image-widget{
+                    input#edit-avatars-user-picture-0-upload-button{
+                        font-family: $robotofont !important;
+                        color: $white;
+                        padding: 0 70px;
+                        min-width: auto;
+                        background-position: 75% 50%;
+                    }
+                }
+            }
+        }
+        fieldset#edit-avatars-avatar-generator--wrapper{
+            .fieldset-wrapper{
+                #edit-avatars-avatar-generator{
+                    .avatar_preview_radio{
+                        .form-item{
+                            input[type=radio]{
+                                +label{
+                                    padding-left: 10px;
+                                    &:before{
+                                        position: relative;
+                                        left: -10px;
+                                        width: 25px;
+                                        height: 25px;
+                                        line-height: 25px !important;
+                                        font-size: 16px !important;
+                                        border-radius: 5px;
+                                        color: $orange;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.local-tasks{
+    ul{
+        li{
+            a{
+                font-family: $robotofont !important;
+                line-height: 50px !important;
+            }
+        }
+    }
+}

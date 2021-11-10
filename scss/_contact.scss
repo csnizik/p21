@@ -1,0 +1,1023 @@
+.contact-page{
+    .landing-sec-1 {
+        padding: 92px 0 132px 0;
+        @include breakpoint(xl)
+        {
+            padding:60px 0 73px 0;
+        }
+        @include breakpoint(md)
+        {
+            padding:120px 0px;
+        }
+        @include breakpoint(sm)
+        {
+            padding:60px 0px;
+        } 
+    }
+//    .landing-sec-3 {
+//        padding: 520px 0 274px 0;
+//    }
+    .innerBanner{
+        .dim{
+            opacity: 0.3;
+        }
+    }
+}
+
+.innerBanner {
+    height:640px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    position: relative;
+    overflow: hidden;
+    @include breakpoint(xl){
+        height: 510px !important;
+    }
+    @include breakpoint(lg){
+        height: 400px !important;
+    }
+    @include breakpoint(sm)
+    {
+        height:250px !important;
+        margin-top: 90px;
+    }
+    @include breakpoint(xs)
+    {
+        height: 210px;
+    }
+    @include breakpoint(vs)
+    {
+        height: 210px;
+    }
+    .container{
+        width: 100%;
+    }
+    .dim{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background:#000000;
+        opacity: 0.6;
+    }
+    .pageTitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        text-align: center;
+        position: relative;
+        h1{
+            color: $white;
+            text-transform: uppercase;
+            font-size: 46px;
+            letter-spacing: 7px;
+            margin: 0;
+            @include breakpoint(xl)
+            {
+                font-size: 34px !important;
+            }
+            @include breakpoint(sm)
+            {
+                font-size: 32px !important;
+            }
+            @include breakpoint(xs)
+            {
+                font-size: 28px !important;
+            }
+        }
+    }
+}
+.contact-page{
+    .landing-sec-1{
+        .landing-sec-caps{
+            padding: 48px 0px 0px 79px;
+            @include breakpoint(lg){
+                padding: 50px 0 0;
+            }
+        }
+    }
+}
+.landing-sec-caps{
+    width: 100%;
+    .location-blocks{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 60px;
+        @include breakpoint(xl){
+            padding-bottom: 16px;
+        }
+        @include breakpoint(sm){
+            padding-top: 30px;
+            padding-bottom: 0;
+        }
+        &:last-child{
+            padding-bottom: 0px;
+        }
+        .location-img{
+            width: 120px;
+            @include breakpoint(xl){
+                width: 94px;
+            }
+            @include breakpoint(sm){
+                width: 100%;
+            }
+            img{
+                @include breakpoint(xl){
+                    max-width: 69%;
+                }
+            }
+        }
+        .location-content{
+            width: calc(100% - 120px);
+            padding-left: 16px;
+            @include breakpoint(sm){
+                width: 100%;
+                width: calc(100% - 0);
+                padding: 20px 0 0;
+            }
+            h6{
+                font-size: 21px;
+                color: $light_gray1;
+                letter-spacing: 0.05em;
+                @include breakpoint(xl){
+                    // font-size: 16px;
+                    // margin: 0 0 13px;
+                }
+            }
+            p{
+                color: $black;
+                font-size: 17px;
+                @include breakpoint(xl){
+                    // font-size: 14px;
+                    // width: 81%;
+                }
+                @include breakpoint(sm){
+                    width: 100%;
+                    margin: 0;
+                }
+                span{
+                    color: $light_gray1;
+                }
+            }
+        }
+    }
+}
+
+.purple-theme{
+    .landing-sec-2-block-text{
+        .link{
+            text-transform: none;
+            background: none;
+            color: $purple;
+            padding: 0;
+            &:hover{
+                color: $white;
+            }
+        }
+    }
+    .lets-talk-sec{
+         h3.label{
+            &:before{
+                background: $purple;
+            }
+        }
+    }
+    .label:before{
+        background-color: $purple;
+    }
+}
+
+#contact_sale_modal, #contact_support_modal, #contact_oracle_modal, #see_position_modal {
+    .modal_con_form {
+        .modal_content {
+            p {
+                a {
+                    color: $purple;
+                }
+            }
+        }
+        .form-row input[type="submit"], 
+        .form-row input[type="button"] {
+            background: $purple;
+        }
+    }
+}
+
+.purple-theme-bg{
+    background: $purple;
+}
+
+.contact-form-main{
+    width: 100%;
+    @include breakpoint(sm){
+        width: 100%;
+        padding: 0px;
+    }
+    input[type="text"],input[type="email"],textarea{
+            border: 1px solid rgba(255,255,255,0.35);
+        color: $white;
+        @include breakpoint(sm) {
+            height: 55px;
+            line-height: 52px;
+            width: 100%;
+            padding: 0px 15px;
+            font-size: 16px;
+        }
+            
+    }
+    input[type="text"]::placeholder,input[type="email"]::placeholder,textarea::placeholder{
+        color: $white;
+    }
+    textarea{
+        @include breakpoint(sm) {
+            height:120px;
+            line-height: normal;
+            width: 100%;
+            padding:15px !important;
+            font-size: 16px !important;
+        }
+    }
+    .form-m-row {
+        display: flex;
+        flex-wrap: wrap;
+        .form-col-m {
+            width: 50%;
+            input[type="text"],input[type="email"]{
+                border-bottom: 0;
+            }
+            &:last-child{
+                input[type="text"],input[type="email"]{
+                    border-left: 0;
+                    @include breakpoint(sm) {
+                        border-left: 1px solid rgba(255,255,255,0.35);
+
+                    }
+                }
+            }
+            @include breakpoint(sm) {
+                width: 100%;
+            }
+        }
+        &.submit-btn-row{
+            margin-top: 80px;
+            @include breakpoint(sm) {
+                margin-top: 50px;
+            }
+        }
+    }
+    input[type="submit"]{
+        background: $white;
+        color: $purple;
+        @include transition (all 0.3s ease-in-out 0s);
+        &:hover{
+            background: $black;
+            color: $white;
+        }
+        @include breakpoint(sm) {
+            padding: 20px 50px 20px 40px;
+            width: 100%;
+        }
+    }
+    
+    
+}
+
+.contact-lr-blocks{
+    width: 100%;
+    position: relative;
+    .contact-lr{
+        width: 100%;
+        padding-bottom: 80px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        @include breakpoint(xl)
+        {
+            padding-bottom: 71px;    
+        }
+        @include breakpoint(md)
+        {
+            padding-bottom: 50px;    
+        }
+        @include breakpoint(sm)
+        {
+            padding-bottom: 40px;    
+            justify-content: flex-start;
+            text-align: left;
+        }
+        .contact-lr-img{
+            width: 232px;
+            @include breakpoint(xl)
+            {
+                width: 179px;
+            }
+            @include breakpoint(sm)
+            {
+                width: 150px;
+                margin: 0 0 10px;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        .contact-lr-desc{
+            width: calc(100% - 440px);
+            padding-left: 42px;
+            @include breakpoint(xl)
+            {
+                width: calc(100% - 179px);    
+                padding-left: 35px;
+                padding-right: 0;
+            }
+            @include breakpoint(sm)
+            {
+                width: calc(100% - 0px);    
+                width: 100%;
+                padding-left: 0;
+            }
+            .btn{
+                height: 50px;
+                line-height: 56px;
+                padding: 0em 35px 0px;
+                font-size: 17px;
+            }
+            h4{
+                color: $white;
+                font-size: 32px;
+                font-family: $default;
+                text-transform: uppercase;
+                @include breakpoint(xl)
+                {
+                    // font-size: 28px;
+                    margin: 18px 0 12px;
+                }
+            }
+            p{
+                font-size: 20px;
+                color: $white;
+                @include breakpoint(xl)
+                {
+                    // font-size: 16px;
+                    // line-height: 1.4;
+                    max-width: 660px;
+                    width: 100%;
+                    letter-spacing: 0.025em;
+                }
+                br{
+                    @include breakpoint(xl)
+                    {
+                        display: none;
+                    }
+                }
+            }
+            .btn{
+                @include breakpoint(lg)
+                {
+                    height: 40px;
+                    line-height: 45px;
+                    font-size: 14px;
+                    span{
+                        &:after{
+                            top: 10%;
+                        }
+                    }
+                }
+            }
+        }
+        &.right{
+            text-align: right;
+            float: right;
+            justify-content: flex-end;
+            @include breakpoint(sm)
+            {
+                float: left;
+                text-align: left;
+                justify-content: flex-start;
+            }
+            .contact-lr-img{
+                order: 2;
+                @include breakpoint(sm)
+                {
+                    order: -1;
+                }
+            }
+            .contact-lr-desc{
+                order: 1;
+                padding-left: 0px!important;
+                padding-right: 42px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: flex-end;
+                @include breakpoint(xl)
+                {
+                    padding-right: 35px;
+                    padding-left: 0;
+                }
+                @include breakpoint(sm)
+                {
+                    padding-right: 0px;
+                    flex-direction: unset;
+                    justify-content: flex-start;
+                }
+                p{
+                    float: right;
+                }
+                h4{
+                    font-family: $default;
+                }
+            }
+        }
+        &:last-child{
+            padding-bottom: 0px;
+        }
+    }
+}
+
+.mac{
+    .contact-lr-blocks{
+        .contact-lr{
+            .contact-lr-desc{
+                .btn{
+                    line-height: 51px;
+                    @include breakpoint(lg)
+                    {
+                        line-height: 41px;
+                    }
+                    span{
+                        &:after{
+                            top: 6%;
+                            @include breakpoint(lg){
+                                top: 10%;    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.map-sec{
+    padding-top: 248px;
+    position: relative;
+    display: flex;
+    z-index: 3;
+    width: 100%;
+    @include breakpoint(sm) {
+        padding-top: 0px;
+    }
+    a{
+        width: 100%;
+        display: inline-block;
+    }
+    img{
+        width: 100%;
+        display: block;
+    }
+}
+
+.dark_back_modal{
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: $black;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}
+.open-modal {
+    .dark_back_modal{
+        opacity: 0.7;
+        visibility: visible;
+    }
+}
+.contact_side_modal{
+    width: 918px;
+    max-width: 80%;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    height: 100vh;
+    z-index: 99999999999;
+    overflow-y: scroll;
+    transition: all .7s;
+    -webkit-transition: all .7s;
+    @include breakpoint(xs) {
+        max-width: 90%;
+    }
+    &.open-modal{
+        right: 0;
+    }
+    .contact_side_md_white {
+        padding: 30px 68px;
+        background-color: $white;
+        position: relative;
+        z-index: 99;
+        min-height: 100%;
+        @include breakpoint(md) {
+            padding: 30px;
+        } 
+        @include breakpoint(xs) {
+            padding: 25px;
+        }
+    }
+    .modal_close_btn{
+        width: 100%;
+        text-align: right;
+        a{
+            display: inline-block;
+            @include breakpoint(md) {
+                width: 40px;
+            }
+        }
+    }
+    .modal_title{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: $robotofont;
+        padding-top: 30px;
+        flex-wrap: wrap;
+        h3{
+            font-size: 40px;
+            font-weight: 100;
+            font-family: $robotofont;
+            @include breakpoint(md) {
+                font-size: 30px;
+            }
+            @include breakpoint(sm) {
+                font-size: 24px;
+                margin: 0;
+            }
+        }
+        p{
+            font-size: 15px;
+            font-weight: 100;
+            font-family: $robotofont;
+            @include breakpoint(sm) {
+                font-size: 14px;
+                margin: 0;
+                line-height: normal;
+            }
+            span{
+                color: $orange;
+            }
+        }
+    }
+    .modal_con_form{
+        padding-top: 30px;
+        width: 100%;
+         
+        .form-row{
+            width: 100%;
+            margin-bottom: 20px; 
+            @include breakpoint(sm) {
+                margin-bottom: 15px;
+            }
+            label{
+                font-family: $robotofont;
+                font-size: 20px;
+                font-weight: 100;
+                margin-bottom: 10px;
+                width: 100%;
+                display: inline-block;
+                @include breakpoint(md) {
+                    font-size: 16px;
+                    line-height: normal;
+                }
+                span{
+                    color: $orange;
+                }
+            }
+            input{
+                width: 100%;
+                border: 1px solid $Gainsboro;
+                height: 50px;
+                line-height: 50px;
+                padding: 0 20px;
+                font-size: 20px;
+                font-family: $default;
+                border-radius: 6px;
+                font-family: $robotofont;
+                font-weight: 300;
+                @include breakpoint(md) {
+                    height: 40px;
+                    line-height: 40px;
+                    border-radius: 4px;
+                    font-size: 16px;
+                    padding: 0 15px;
+                }
+            }
+            textarea{
+                height: 285px;
+                padding: 20px !important;
+                border: 1px solid $Gainsboro !important;
+                border-radius: 6px !important;
+                -webkit-border-radius: 6px !important;
+                font-family: $robotofont !important;
+                font-weight: 300 !important;
+                line-height: normal;
+                @include breakpoint(md) {
+                    height: 200px;
+                    padding: 15px !important;
+                    font-size: 16px !important;
+                }
+            }
+            input[type="submit"], input[type="button"]{
+                width: auto !important;
+                max-width: 100%;
+                font-family: $default !important;
+                font-size: 20px !important;
+                color: $white;
+                text-transform: uppercase;
+                letter-spacing: 2.5px;
+                cursor: pointer;
+                padding: 0px 136px 0px 136px;
+                border-radius: 6px;
+                -webkit-border-radius: 6px;
+                transition: all .4s;
+                height: auto;
+                background-color: $orange;
+                height: 50px;
+                line-height: 55px;
+                background-position: 67% 55%;
+                @include breakpoint(md) {
+                    padding: 0 10px;
+                    width: 100%!important;
+                }
+                @include breakpoint(xs) {
+                    font-size: 16px !important;
+                }
+            }
+            &:last-child{
+                margin: 0;
+            }
+        }
+        .modal_content{
+            width: 100%;
+            font-family: $robotofont;
+            font-weight: 300;
+            margin-bottom: 40px;
+            p{
+                font-size: 16px;
+                line-height: 1.4em;
+                @include breakpoint(md) {
+                    font-size: 14px;
+                }
+                a{
+                    font-weight: 500;
+                    color: $orange;
+                }
+            }
+        }
+    }
+}
+
+.mac{
+    .contact_side_modal{
+        .modal_con_form{
+            .form-row{
+                input[type="submit"], input[type="button"]{
+                    line-height: 50px;
+                    background-position: 67% 50%;
+                }
+            }
+        }
+    }
+}
+
+.contact-page{
+    .landing-sec-2{
+        .landing-sec-2-inner{
+            width: 94%;
+            padding-right: 15%;
+            @include breakpoint(lg)
+            {
+                width: 100%;
+                padding-right: 0%;
+            }
+        }
+        .landing-sec-2-tit-caps{
+            width: 100%;
+        }
+        h3{
+            color: $dim_gray;
+            margin-bottom: 15px;
+            @include breakpoint(xl)
+            {
+                margin-bottom: 10px;
+            }
+        }
+        h5{
+            font-size: 24px;
+            line-height: 32px;
+            @include breakpoint(xl)
+            {
+                font-size: 20px;
+                line-height: 1.3em;
+            }
+        }
+    }
+    .landing-sec-3{
+        padding: 400px 0 162px 0;
+        margin-top: -240px;
+        @include breakpoint(xl){
+            padding: 297px 0 129px 0;
+            margin-top: -173px;
+        }
+        @include breakpoint(xl){
+            padding: 100px 0;
+            margin-top: 0;
+        }
+        // .polygon-a {
+        //     position: absolute;
+        //     &.polygon-a-1 {
+        //         right: 14.8%;
+        //         top: 25%;
+        //         width: 6.5%;
+        //         @include breakpoint(xxxl) {}
+        //         @include breakpoint(xxl) {}
+        //         @include breakpoint(xl) {}
+        //         @include breakpoint(lg) {
+        //             display: none;
+        //         }
+        //         @include breakpoint(md) {}
+        //         @include breakpoint(sm) {}
+        //         @include breakpoint(xs) {}
+        //         @include breakpoint(vs) {}
+        //     }
+        //     &.polygon-a-2 {
+        //         right: 5%;
+        //         top: 25%;
+        //         width: 12.1%;
+        //         @include breakpoint(xxxl) {}
+        //         @include breakpoint(xxl) {}
+        //         @include breakpoint(xl) {}
+        //         @include breakpoint(lg) {}
+        //         @include breakpoint(md) {}
+        //         @include breakpoint(sm) {
+        //             right: 1.5%;
+        //             top: 31.5%;
+        //             width: 41.1%;
+        //         }
+        //         @include breakpoint(xs) {}
+        //         @include breakpoint(vs) {}
+        //     }
+        //     &.polygon-a-3 {
+        //         right: -0.8%;
+        //         top: 23%;
+        //         width: 8.45%;
+        //         @include breakpoint(xxxl) {}
+        //         @include breakpoint(xxl) {}
+        //         @include breakpoint(xl) {}
+        //         @include breakpoint(lg) {}
+        //         @include breakpoint(md) {}
+        //         @include breakpoint(sm) {
+        //             right: 31%;
+        //             top: 7%;
+        //             width: 18.45%;
+        //         }
+        //         @include breakpoint(xs) {}
+        //         @include breakpoint(vs) {}
+        //     }
+        //     &.polygon-a-4 {
+        //         right: 7.6%;
+        //         top: 32%;
+        //         width: 2.7%;
+        //         @include breakpoint(xxxl) {}
+        //         @include breakpoint(xxl) {}
+        //         @include breakpoint(xl) {}
+        //         @include breakpoint(lg) {}
+        //         @include breakpoint(md) {}
+        //         @include breakpoint(sm) {}
+        //         @include breakpoint(xs) {}
+        //         @include breakpoint(vs) {}
+        //     }
+        //     &.polygon-a-5 {
+        //         right: 15.5%;
+        //         top: 94%;
+        //         width: 2%;
+        //         @include breakpoint(xxxl) {}
+        //         @include breakpoint(xxl) {}
+        //         @include breakpoint(xl) {}
+        //         @include breakpoint(lg) {}
+        //         @include breakpoint(md) {}
+        //         @include breakpoint(sm) {}
+        //         @include breakpoint(xs) {}
+        //         @include breakpoint(vs) {}
+        //     }
+        //     &.polygon-a-6 {
+        //         right: 16.8%;
+        //         top: 84%;
+        //         width: 6.5%;
+        //         @include breakpoint(xxxl) {}
+        //         @include breakpoint(xxl) {}
+        //         @include breakpoint(xl) {}
+        //         @include breakpoint(lg) {}
+        //         @include breakpoint(md) {}
+        //         @include breakpoint(sm) {}
+        //         @include breakpoint(xs) {}
+        //         @include breakpoint(vs) {}
+        //     }
+        //     &.polygon-a-7 {
+        //         right: 10.5%;
+        //         top: 89%;
+        //         width: 4.4%;
+        //         @include breakpoint(xxxl) {}
+        //         @include breakpoint(xxl) {}
+        //         @include breakpoint(xl) {}
+        //         @include breakpoint(lg) {}
+        //         @include breakpoint(md) {}
+        //         @include breakpoint(sm) {}
+        //         @include breakpoint(xs) {}
+        //         @include breakpoint(vs) {}
+        //     }
+        //     &.polygon-a-8 {
+        //         right: 15%;
+        //         top: 83%;
+        //         width: 2.7%;
+        //         @include breakpoint(xxxl) {}
+        //         @include breakpoint(xxl) {}
+        //         @include breakpoint(xl) {}
+        //         @include breakpoint(lg) {}
+        //         @include breakpoint(md) {}
+        //         @include breakpoint(sm) {}
+        //         @include breakpoint(xs) {}
+        //         @include breakpoint(vs) {}
+        //     }
+        //     &.polygon-a-9 {
+        //         right: 6%;
+        //         top: 75%;
+        //         width: 5.5%;
+        //         @include breakpoint(xxxl) {}
+        //         @include breakpoint(xxl) {}
+        //         @include breakpoint(xl) {}
+        //         @include breakpoint(lg) {}
+        //         @include breakpoint(md) {}
+        //         @include breakpoint(sm) {}
+        //         @include breakpoint(xs) {}
+        //         @include breakpoint(vs) {}
+        //     }
+        // }
+    }
+    .map-sec{
+        padding-top: 242px;
+        @include breakpoint(xl) {
+            padding-top: 199px;
+        }
+        @include breakpoint(md) {
+            padding-top: 100px; 
+        }
+    }
+}
+
+
+.contact-landing-sec-3{
+    .polygon-shape{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        .polygon-a {
+            position: absolute;
+            &.polygon-a-1 {
+                right: 15%;
+                top: 10.5%;
+                width: 6.5%;
+                @include breakpoint(xxxl) {}
+                @include breakpoint(xxl) {}
+                @include breakpoint(xl) {}
+                @include breakpoint(lg) {
+                    display: none;
+                }
+                @include breakpoint(md) {}
+                @include breakpoint(sm) {}
+                @include breakpoint(xs) {}
+                @include breakpoint(vs) {}
+            }
+            &.polygon-a-2 {
+                right: 5%;
+                top: 14%;
+                width: 12.1%;
+                @include breakpoint(xxxl) {}
+                @include breakpoint(xxl) {}
+                @include breakpoint(xl) {}
+                @include breakpoint(lg) {}
+                @include breakpoint(md) {}
+                @include breakpoint(sm) {
+                    right: 1.5%;
+                    top: 31.5%;
+                    width: 41.1%;
+                }
+                @include breakpoint(xs) {}
+                @include breakpoint(vs) {}
+            }
+            &.polygon-a-3 {
+                right: -0.8%;
+                top: 24%;
+                width: 8.45%;
+                @include breakpoint(xxxl) {}
+                @include breakpoint(xxl) {}
+                @include breakpoint(xl) {}
+                @include breakpoint(lg) {}
+                @include breakpoint(md) {}
+                @include breakpoint(sm) {
+                    right: 31%;
+                    top: 7%;
+                    width: 18.45%;
+                }
+                @include breakpoint(xs) {}
+                @include breakpoint(vs) {}
+            }
+            &.polygon-a-4 {
+                right: 7.6%;
+                top: 32%;
+                width: 2.7%;
+                @include breakpoint(xxxl) {}
+                @include breakpoint(xxl) {}
+                @include breakpoint(xl) {}
+                @include breakpoint(lg) {}
+                @include breakpoint(md) {}
+                @include breakpoint(sm) {}
+                @include breakpoint(xs) {}
+                @include breakpoint(vs) {}
+            }
+            &.polygon-a-5 {
+                right: 16%;
+                top: 71%;
+                width: 2%;
+                @include breakpoint(xxxl) {}
+                @include breakpoint(xxl) {}
+                @include breakpoint(xl) {}
+                @include breakpoint(lg) {}
+                @include breakpoint(md) {}
+                @include breakpoint(sm) {}
+                @include breakpoint(xs) {}
+                @include breakpoint(vs) {}
+            }
+            &.polygon-a-6 {
+                right: 16.8%;
+                top: 72%;
+                width: 6.5%;
+                @include breakpoint(xxxl) {}
+                @include breakpoint(xxl) {}
+                @include breakpoint(xl) {}
+                @include breakpoint(lg) {}
+                @include breakpoint(md) {}
+                @include breakpoint(sm) {}
+                @include breakpoint(xs) {}
+                @include breakpoint(vs) {}
+            }
+            &.polygon-a-7 {
+                right: 10.5%;
+                top: 79%;
+                width: 4.4%;
+                @include breakpoint(xxxl) {}
+                @include breakpoint(xxl) {}
+                @include breakpoint(xl) {}
+                @include breakpoint(lg) {}
+                @include breakpoint(md) {}
+                @include breakpoint(sm) {}
+                @include breakpoint(xs) {}
+                @include breakpoint(vs) {}
+            }
+            &.polygon-a-8 {
+                right: 14.5%;
+                top: 82.5%;
+                width: 2.7%;
+                @include breakpoint(xxxl) {}
+                @include breakpoint(xxl) {}
+                @include breakpoint(xl) {}
+                @include breakpoint(lg) {}
+                @include breakpoint(md) {}
+                @include breakpoint(sm) {}
+                @include breakpoint(xs) {}
+                @include breakpoint(vs) {}
+            }
+            &.polygon-a-9 {
+                right: 6%;
+                top: 92%;
+                width: 5.5%;
+                @include breakpoint(xxxl) {}
+                @include breakpoint(xxl) {}
+                @include breakpoint(xl) {}
+                @include breakpoint(lg) {}
+                @include breakpoint(md) {}
+                @include breakpoint(sm) {}
+                @include breakpoint(xs) {}
+                @include breakpoint(vs) {}
+            }
+        }
+    }
+}

@@ -1,0 +1,288 @@
+.blog-content{
+    &.download-page{
+        line-height: 1.6;
+        .col-8 {
+            padding-right: 66px;
+            @include breakpoint(md){
+                width: 100%;
+                padding-right: 0px;
+                order: 2;
+            }
+        }
+        .col-4{
+            @include breakpoint(md)
+            {
+                width: 100%;
+                order: 1;
+                padding-top: 0px;
+            }
+        }
+        p{
+            letter-spacing: 0.55px;
+            font-size: 17px;
+            line-height: 1.77;
+            margin-bottom: 25px;
+            @include breakpoint(md){
+                font-size: 16px;
+            }
+        }
+        .innerpage-title{
+            h1{
+                margin-top: 0px;
+            }
+        }
+        h1{
+            margin-top: 23px;
+            font-size: 40px;
+            margin-bottom: 22px;
+            @include breakpoint(md)
+            {
+                font-size: 34px;
+            }
+            @include breakpoint(sm)
+            {
+                font-size: 30px;
+            }
+        }
+        table{
+            margin-bottom: 40px;
+            margin-top: 40px;
+            th{
+                padding: 17px 17px;
+            }
+            td{
+                padding: 11px 11px;
+            }
+        }
+    }
+    &.roboto-font{
+        h1{
+            font-weight: 300;
+        }
+    }
+}
+
+.download-block-main{
+    padding-top: 0;
+    width: 970px; 
+    max-width: 100%;
+    .block{
+        padding-bottom: 10px;
+    }
+    .download_block{
+        border-radius: 10px;
+        width: 45%;
+        display: flex;
+        padding: 38px 35px;
+        margin-bottom: 10px;
+        background-color: $aqua;
+        margin-right: 5%;
+        transition: all .5s;
+        @include breakpoint(xl){
+            padding: 25px;
+            width: 49%;
+            margin-right: 1%;
+        }
+        @include breakpoint(lg) {
+            width: 100%;
+        }
+        @include breakpoint(md) {
+            width: 100%;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        @include breakpoint(sm) {
+            width: 100%;
+            padding: 20px;
+            flex-wrap: nowrap;
+        }
+        .download_for_icon{
+            width: 120px;
+            @include breakpoint(xl){
+                width: 90px;
+            }
+            @include breakpoint(md){
+                width: 100%;
+                text-align: center;
+            }
+            @include breakpoint(sm) {
+                width: 90px;
+                text-align: left;
+            }
+            @include breakpoint(xs) {
+                width: 70px;
+                text-align: left;
+            }
+            img{
+                max-height: 88px;
+                @include breakpoint(xl){
+                    max-height: 70px;
+                }
+                @include breakpoint(sm){
+                    max-height: 70px;
+                }
+                @include breakpoint(xs){
+                    max-height: 50px;
+                }
+            }
+        }
+        .download-details{
+            width: calc(100% - 120px);
+            @include breakpoint(xl){
+                width: calc(100% - 90px);
+            }
+            @include breakpoint(md){
+                width: 100%;
+                text-align: center;
+            }
+            @include breakpoint(sm) {
+                width: calc(100% - 90px);
+            }
+            @include breakpoint(sm) {
+                width: calc(100% - 70px);
+            }
+            text-align: center;
+            p{
+                color: $white;
+                margin-bottom: 4px;
+                font-size: 18px;
+                @include breakpoint(xl){
+                    font-size: 16px;
+                }
+            }
+            .btn{
+                width: 100%;
+                font-size: 14px;
+                color: $dark;
+                width: auto;
+                height: 47px;
+                line-height: 52px;
+                &:hover{
+                    color: $white;
+                }
+                @include breakpoint(xl){
+                    height: 48px;
+                    line-height: 53px;
+                    font-size: 12px;
+                }
+            }
+        }
+        &:hover{
+            background-color: $aqua;
+            transition: all .5s;
+            .btn{
+                color: $aqua;
+            }
+        }
+    }
+}
+
+// .roboto-font{
+//     .download-block-main{
+//         .download_block{
+//             .download-details{
+//                 .btn{
+//                     line-height: 50px;
+//                     @include breakpoint(xl){
+//                         line-height: 50px;    
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+.mac{
+    .download-block-main{
+        .download_block{
+            .download-details{
+                .btn{
+                    line-height: 47px;
+                    @include breakpoint(xl){
+                        line-height: 48px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.search-block{
+	width: 100%;
+	position: relative;
+    margin-bottom: 77px;
+    margin-top: 0; 
+    padding:0;
+    @include breakpoint(xl) {
+        margin-bottom: 58px; 
+        margin-top: 0;
+    }
+	.search-inp{
+		width: 100%;
+		border-radius:50px;
+		background-color:$lighting_gray;
+		padding: 0px 25px;
+		padding-right:50px;
+		font-weight: 300;
+		font-size: 17px;
+		height: 54px;
+		line-height: 54px;
+		font-family: $robotofont;
+        text-transform: capitalize;
+        @include breakpoint(xl){
+            height: 43px;
+            line-height: 43px;
+        }
+	}
+	.search-btn{
+		width: auto;
+	    max-width: unset;
+	    min-width: unset;
+	    height: auto;
+	    line-height: normal;
+	    padding: 0;
+	    background: transparent;
+	    background-image: url('../images/search-ico.svg');
+	    background-repeat:no-repeat;
+	    background-size:20px;
+	    margin: 0;
+    	width: 22px;
+    	height: 22px;
+    	background-position:center;
+    	position: absolute;
+    	right: 22px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+	}
+}
+
+.sidebar-menu {    
+    ul{
+        padding: 0;
+        margin: 0;
+        li{
+            font-size: 17px;
+            a{
+                font-weight: 400;
+                font-size: 17px;
+                color: #7e7e7e;
+                &:hover{
+                    color: $aqua;
+                }
+            }
+            ul{
+                padding: 0 0 0 15px;
+            }
+            &:before{
+                display: none;
+            }
+            &.active{
+                a{
+                    font-weight: 700;
+                    color: $aqua;
+                }
+            }
+        }
+    }
+}
