@@ -1,0 +1,237 @@
+.q_slide .slide {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  opacity: 1;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.q_slide .slide .Overlaytext {
+  visibility: visible;
+  animation-duration: 40s;
+  animation-name: showtext;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+.q_slide .slide .image {
+  background-color: white;
+  background-blend-mode: darken;
+  opacity: 100%;
+}
+.q_slide .pagination .pagenum {
+  color: #fff;
+  width: 15%;
+  padding: 0 3%;
+  cursor: pointer;
+  box-sizing: border-box;
+  opacity: 20%;
+  animation-duration: 40s;
+  animation-name: currentpagenum;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+.pagination {
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 45px;
+  justify-content: space-around;
+}
+@media screen and (max-width: 1799px) {
+  .pagination .pagenum {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 2149px) {
+  .pagination .pagenum {
+    font-size: 34px;
+  }
+}
+.pagination .pagenum .progressbar {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 0%;
+  height: 1px;
+  display: block;
+  margin-top: 20px;
+  animation-duration: 40s;
+  animation-name: currentprogbar;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@media (max-width: 1799) {
+  .pagination .pagenum .progressbar {
+    margin-top: 6px;
+  }
+}
+
+@keyframes autoplay {
+  0% {
+    left: -100%;
+    z-index: 1;
+  }
+  2.5% {
+    left: 0;
+    z-index: 1;
+  }
+  21.25% {
+    left: 0;
+    z-index: 2;
+  }
+  23.75% {
+    left: 100%;
+    z-index: 2;
+  }
+  100% {
+    left: 100%;
+    z-index: 2;
+  }
+}
+@keyframes autoplay-first {
+  0% {
+    left: 0;
+    z-index: 1;
+  }
+  21.25% {
+    left: 0;
+    z-index: 2;
+  }
+  23.75% {
+    left: 100%;
+    z-index: 2;
+  }
+  100% {
+    left: 100%;
+    z-index: 2;
+  }
+}
+
+@keyframes showtext {
+  0% {
+    opacity: 0%;
+  }
+  3.25% {
+    opacity: 0%;
+  }
+  5.25% {
+    opacity: 100%;
+  }
+  21.25% {
+    opacity: 100%;
+  }
+  23.75% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes currentpagenum {
+    0% {
+        opacity: 20%;
+    }
+  3% {
+    opacity: 20%;
+  }
+  6.1% {
+      opacity: 100%;
+  }
+  22% {
+    opacity: 100%;
+  }
+  22.1% {
+    opacity: 20%;
+  }
+  100% {
+    opacity: 20%;
+  }
+}
+
+@keyframes currentprogbar{
+    0% {
+        width: 0%;
+    }
+  3% {
+    width: 0%;
+  }
+  22% {
+    width: 100%;
+  }
+  22.1% {
+    width: 0%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+.slides > *:nth-child(1) {
+  animation-name: autoplay;
+  animation-delay: 32s;
+}
+.slides > *:nth-child(2) {
+  animation-name: autoplay;
+  animation-delay: 24s;
+}
+.slides > *:nth-child(3) {
+  animation-name: autoplay;
+  animation-delay: 16s;
+}
+.slides > *:nth-child(4) {
+  animation-name: autoplay;
+  animation-delay: 8s;
+}
+.slides > *:nth-child(5) {
+  animation-name: autoplay-first;
+  animation-delay: 0s;
+}
+
+.slides > *:nth-child(1) .Overlaytext {
+  animation-delay: 32s;
+}
+.slides > *:nth-child(2) .Overlaytext {
+  animation-delay: 24s;
+}
+.slides > *:nth-child(3) .Overlaytext {
+  animation-delay: 16s;
+}
+.slides > *:nth-child(4) .Overlaytext {
+  animation-delay: 8s;
+}
+.slides > *:nth-child(5) .Overlaytext {
+  animation-delay: 0s;
+}
+
+.pagination > *:nth-child(1) {
+  animation-delay: 0s;
+}
+.pagination > *:nth-child(2) {
+  animation-delay: 8s;
+}
+.pagination > *:nth-child(3) {
+  animation-delay: 16s;
+}
+.pagination > *:nth-child(4) {
+  animation-delay: 24s;
+}
+.pagination > *:nth-child(5) {
+  animation-delay: 32s;
+}
+
+.pagination .pagenum > *:nth-child(1){
+    animation-delay: 0s;
+}.pagination .pagenum > *:nth-child(2){
+    animation-delay: 8s;
+}.pagination .pagenum > *:nth-child(3){
+    animation-delay: 16s;
+}.pagination .pagenum > *:nth-child(4){
+    animation-delay: 24s;
+}.pagination .pagenum > *:nth-child(5){
+    animation-delay: 32s;
+}

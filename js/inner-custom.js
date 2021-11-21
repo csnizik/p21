@@ -26,7 +26,8 @@ jQuery(window).scroll(function() {
 
 
 /* Custom JS Code */
-jQuery(document).ready(function() {
+jQuery(document).ready(function () {
+    // Only used on careers.html
     jQuery(".slick.marquee").slick({
         speed: 2e4,
         autoplay: !0,
@@ -41,16 +42,14 @@ jQuery(document).ready(function() {
         arrows: !1,
         buttons: !1
     })
+    // Used on adam.html define-xml.html sdtm.html send.html
     jQuery(".custom-table-filter ul li a").click(function() {
             jQuery(".custom-table-filter ul li a").removeClass("active"), jQuery(this).addClass("active")
         }), jQuery(".advanced-title").click(function() {
             jQuery(".advanced-block-m").slideToggle(), jQuery(".advanced-title").toggleClass("open-advanced-form")
         })
     }), jQuery(window).on("load", function() {
-        jQuery(".se-pre-con").fadeOut("slow"), AOS.init({
-            duration: 1e3,
-            once: !0
-        }), thememenu(), AOS.init({}), jQuery(window).scroll(function() {
+        thememenu(), AOS.init({}), jQuery(window).scroll(function() {
             jQuery(".scroll-line").css("opacity", 1 - jQuery(window).scrollTop() / jQuery(".landing-slider-sec").height()), jQuery(window).scrollTop() >= .65 * jQuery(window).height() ? (jQuery(".social-icons").addClass("social-icons-black"), jQuery(".scroll-line").fadeOut(1e3)) : (jQuery(".social-icons").removeClass("social-icons-black"), jQuery(".scroll-line").fadeIn(1e3))
         })
     }), jQuery(document).ready(function() {
