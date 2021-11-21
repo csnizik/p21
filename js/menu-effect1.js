@@ -122,7 +122,6 @@ void main() {
           multiTexturesPlane.textures[slideshowState.nextTextureIndex],
       });
           menuBlock.addEventListener('transitionstart', () => {
-              console.log('trans start');
           if (!slideshowState.isChanging) {
             curtains.enableDrawing();
             slideshowState.isChanging = true;

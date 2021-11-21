@@ -26,9 +26,9 @@ table.dataTable{width:100%;margin:0 auto;clear:both;border-collapse:separate;bor
 .show-menu #menu-block {
     left: 0%;
     transition-property: left;
-    transition-duration: .8s;
-    transition-delay: .8s;
-    transition-timing-function: ease-out;
+    transition-duration: .4s;
+    transition-delay: .6s;
+    transition-timing-function: ease-in;
 }
 .flex-wrapper {
     display: -webkit-box;
