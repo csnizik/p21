@@ -10,20 +10,22 @@ window.addEventListener('load', () => {
   const menuBlock = document.querySelector('#menu-block');
 
   const slideshowState = {
-    activeTextureIndex: 1,
-    nextTextureIndex: 2,
     maxTextures: planeElements[0].querySelectorAll('img').length - 1,
+    activeTextureIndex: Math.floor(
+      Math.random() * (planeElements[0].querySelectorAll('img').length - 1) + 1
+    ),
+    nextTextureIndex: Math.floor(
+      Math.random() * (planeElements[0].querySelectorAll('img').length - 1) + 1
+    ),
     isChanging: false,
     transitionTimer: 0,
   };
 
   curtains
     .onError(() => {
-      document.body.classList.add('no-curtains', 'image-1');
-
-      console.log(
-        'curtains did not render. display random image instead. See https://github.com/martinlaxenaire/curtainsjs/blob/master/examples/multiple-textures/js/multiple.textures.setup.js lines 29-43'
-      );
+      document.body.classList.add('no-curtains');
+      // When body.no-curtains is present the first image shows with no animation.
+      // See combine.css .no-curtains #texture-container img:nth-of-type(2) to change.
     })
     .onContextLost(() => {
       curtains.restoreContext();
@@ -102,15 +104,11 @@ void main() {
 
   const multiTexturesPlane = new Plane(curtains, planeElements[0], params);
 
-
   multiTexturesPlane
     .onLoading((texture) => {
       texture.setMinFilter(curtains.gl.LINEAR_MIPMAP_NEAREST);
     })
     .onReady(() => {
-      textureContainer.addEventListener('transitionstart', () => {
-        console.log('start');
-      });
       const activeTex = multiTexturesPlane.createTexture({
         sampler: 'activeTex',
         fromTexture:
@@ -121,31 +119,31 @@ void main() {
         fromTexture:
           multiTexturesPlane.textures[slideshowState.nextTextureIndex],
       });
-          menuBlock.addEventListener('transitionstart', () => {
-          if (!slideshowState.isChanging) {
-            curtains.enableDrawing();
-            slideshowState.isChanging = true;
-            if (slideshowState.activeTextureIndex < slideshowState.maxTextures) {
-              slideshowState.nextTextureIndex =
-                slideshowState.activeTextureIndex + 1;
-            } else {
-              slideshowState.nextTextureIndex = 1;
-            }
-            nextTex.setSource(
-              multiTexturesPlane.images[slideshowState.nextTextureIndex]
-            );
+      menuBlock.addEventListener('transitionstart', () => {
+        if (!slideshowState.isChanging) {
+          curtains.enableDrawing();
+          slideshowState.isChanging = true;
+          slideshowState.nextTextureIndex = Math.floor(
+            Math.random() *
+              (planeElements[0].querySelectorAll('img').length - 1) +
+              1
+          );
 
-            setTimeout(() => {
-              curtains.disableDrawing();
-              slideshowState.isChanging = false;
-              slideshowState.activeTextureIndex = slideshowState.nextTextureIndex;
-              activeTex.setSource(
-                multiTexturesPlane.images[slideshowState.activeTextureIndex]
-              );
-              slideshowState.transitionTimer = 0;
-            }, 1700);
-          }
-        });
+          nextTex.setSource(
+            multiTexturesPlane.images[slideshowState.nextTextureIndex]
+          );
+
+          setTimeout(() => {
+            curtains.disableDrawing();
+            slideshowState.isChanging = false;
+            slideshowState.activeTextureIndex = slideshowState.nextTextureIndex;
+            activeTex.setSource(
+              multiTexturesPlane.images[slideshowState.activeTextureIndex]
+            );
+            slideshowState.transitionTimer = 0;
+          }, 1700);
+        }
+      });
     })
     .onRender(() => {
       if (slideshowState.isChanging) {

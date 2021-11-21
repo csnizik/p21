@@ -68,6 +68,11 @@ table.dataTable{width:100%;margin:0 auto;clear:both;border-collapse:separate;bor
     object-fit: cover;
     opacity: 0%;
 }
+/* If curtains can't be rendered, display the 1st image with no animation */
+.no-curtains #texture-container img:nth-of-type(2) {
+    display: block;
+    opacity: 100%;
+}
 #canvas{ 
     position: absolute;
     left: 0;
